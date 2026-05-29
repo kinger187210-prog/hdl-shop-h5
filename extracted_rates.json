@@ -1,0 +1,3776 @@
+{
+  "超级经济Global": [
+    {
+      "cn": "阿尔及利亚",
+      "en": "Algeria",
+      "code": "DZ",
+      "kgRate": 220.31,
+      "regFee": 0.65,
+      "row": 10
+    },
+    {
+      "cn": "安道尔",
+      "en": "Andorra",
+      "code": "AD",
+      "kgRate": 186.34,
+      "regFee": 4,
+      "row": 11
+    },
+    {
+      "cn": "安哥拉",
+      "en": "Angola",
+      "code": "AO",
+      "kgRate": 183.34,
+      "regFee": 0.65,
+      "row": 12
+    },
+    {
+      "cn": "亚美尼亚",
+      "en": "Armenia",
+      "code": "AM",
+      "kgRate": 145.38,
+      "regFee": 0.65,
+      "row": 13
+    },
+    {
+      "cn": "阿塞拜疆",
+      "en": "Azerbaijan",
+      "code": "AZ",
+      "kgRate": 148.38,
+      "regFee": 0.65,
+      "row": 14
+    },
+    {
+      "cn": "孟加拉国",
+      "en": "Bangladesh",
+      "code": "BD",
+      "kgRate": 115.41,
+      "regFee": 0.65,
+      "row": 15
+    },
+    {
+      "cn": "不丹",
+      "en": "Bhutan",
+      "code": "BT",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 16
+    },
+    {
+      "cn": "波斯尼亚和黑塞哥维那",
+      "en": "Bosnia and Herzegovina",
+      "code": "BA",
+      "kgRate": 187.99,
+      "regFee": 0.68,
+      "row": 17
+    },
+    {
+      "cn": "保加利亚",
+      "en": "Bulgaria",
+      "code": "BG",
+      "kgRate": 78.88,
+      "regFee": 1.36,
+      "row": 18
+    },
+    {
+      "cn": "布基纳法索",
+      "en": "Burkina Faso",
+      "code": "BF",
+      "kgRate": 219.31,
+      "regFee": 0.65,
+      "row": 19
+    },
+    {
+      "cn": "布隆迪",
+      "en": "Burundi",
+      "code": "BI",
+      "kgRate": 140.38,
+      "regFee": 0.65,
+      "row": 20
+    },
+    {
+      "cn": "智利",
+      "en": "Chile",
+      "code": "CL",
+      "kgRate": 113.04,
+      "regFee": 7.18,
+      "row": 21
+    },
+    {
+      "cn": "哥伦比亚",
+      "en": "Colombia",
+      "code": "CO",
+      "kgRate": 165.36,
+      "regFee": 1.05,
+      "row": 22
+    },
+    {
+      "cn": "哥斯达黎加",
+      "en": "Costa Rica",
+      "code": "CR",
+      "kgRate": 178.68,
+      "regFee": 0.75,
+      "row": 23
+    },
+    {
+      "cn": "刚果(金)",
+      "en": "The Democratic Republic Of The Congo",
+      "code": "CD",
+      "kgRate": 230.7,
+      "regFee": 1.32,
+      "row": 24
+    },
+    {
+      "cn": "吉布提",
+      "en": "Djibouti",
+      "code": "DJ",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 25
+    },
+    {
+      "cn": "埃及",
+      "en": "Egypt",
+      "code": "EG",
+      "kgRate": 140.38,
+      "regFee": 0.65,
+      "row": 26
+    },
+    {
+      "cn": "赤道几内亚",
+      "en": "Equatorial Guinea",
+      "code": "GQ",
+      "kgRate": 239.29,
+      "regFee": 0.65,
+      "row": 27
+    },
+    {
+      "cn": "福克兰群岛",
+      "en": "Falkland Islands (Islas Malvinas)",
+      "code": "FK",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 28
+    },
+    {
+      "cn": "芬兰",
+      "en": "Finland",
+      "code": "FI",
+      "kgRate": 104.56,
+      "regFee": 7.94,
+      "row": 29
+    },
+    {
+      "cn": "加蓬",
+      "en": "Gabon",
+      "code": "GA",
+      "kgRate": 239.29,
+      "regFee": 0.65,
+      "row": 30
+    },
+    {
+      "cn": "冈比亚",
+      "en": "Gambia",
+      "code": "GM",
+      "kgRate": 160.37,
+      "regFee": 1.51,
+      "row": 31
+    },
+    {
+      "cn": "加纳",
+      "en": "Ghana",
+      "code": "GH",
+      "kgRate": 159.37,
+      "regFee": 0.65,
+      "row": 32
+    },
+    {
+      "cn": "直布罗陀(英)",
+      "en": "Gibraltar",
+      "code": "GI",
+      "kgRate": 100.42,
+      "regFee": 8,
+      "row": 33
+    },
+    {
+      "cn": "关岛(美)",
+      "en": "Guam",
+      "code": "GU",
+      "kgRate": 180.35,
+      "regFee": 2,
+      "row": 34
+    },
+    {
+      "cn": "危地马拉",
+      "en": "Guatemala",
+      "code": "GT",
+      "kgRate": 264.85,
+      "regFee": 0.75,
+      "row": 35
+    },
+    {
+      "cn": "几内亚比绍",
+      "en": "Guinea-bissau",
+      "code": "GW",
+      "kgRate": 123.4,
+      "regFee": 6.8,
+      "row": 36
+    },
+    {
+      "cn": "印度尼西亚",
+      "en": "Indonesia",
+      "code": "ID",
+      "kgRate": 130.39,
+      "regFee": 0.65,
+      "row": 37
+    },
+    {
+      "cn": "以色列",
+      "en": "Israel",
+      "code": "IL",
+      "kgRate": 74.63,
+      "regFee": 7.67,
+      "row": 38
+    },
+    {
+      "cn": "约旦",
+      "en": "Jordan",
+      "code": "JO",
+      "kgRate": 131.39,
+      "regFee": 0.65,
+      "row": 39
+    },
+    {
+      "cn": "柬埔寨",
+      "en": "Cambodia",
+      "code": "KH",
+      "kgRate": 141.38,
+      "regFee": 0.65,
+      "row": 40
+    },
+    {
+      "cn": "哈萨克斯坦",
+      "en": "Kazakhstan",
+      "code": "KZ",
+      "kgRate": 99,
+      "regFee": 1.2,
+      "row": 41
+    },
+    {
+      "cn": "肯尼亚",
+      "en": "Kenya",
+      "code": "KE",
+      "kgRate": 170.36,
+      "regFee": 0.65,
+      "row": 42
+    },
+    {
+      "cn": "基里巴斯",
+      "en": "Kiribati",
+      "code": "KI",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 43
+    },
+    {
+      "cn": "吉尔吉斯斯坦",
+      "en": "Kyrgyzstan",
+      "code": "KG",
+      "kgRate": 140.38,
+      "regFee": 0.65,
+      "row": 44
+    },
+    {
+      "cn": "老挝",
+      "en": "Lao People's Democratic Republic",
+      "code": "LA",
+      "kgRate": 101.42,
+      "regFee": 6.8,
+      "row": 45
+    },
+    {
+      "cn": "莱索托",
+      "en": "Lesotho",
+      "code": "LS",
+      "kgRate": 183.34,
+      "regFee": 2,
+      "row": 46
+    },
+    {
+      "cn": "利比里亚",
+      "en": "Liberia",
+      "code": "LR",
+      "kgRate": 218.31,
+      "regFee": 0.65,
+      "row": 47
+    },
+    {
+      "cn": "利比亚",
+      "en": "Libya",
+      "code": "LY",
+      "kgRate": 158.76,
+      "regFee": 1.32,
+      "row": 48
+    },
+    {
+      "cn": "列支敦士登",
+      "en": "Liechtenstein",
+      "code": "LI",
+      "kgRate": 147.38,
+      "regFee": 0.65,
+      "row": 49
+    },
+    {
+      "cn": "北马其顿",
+      "en": "North Macedonia",
+      "code": "MK",
+      "kgRate": 146.46,
+      "regFee": 0.55,
+      "row": 50
+    },
+    {
+      "cn": "马达加斯加",
+      "en": "Madagascar",
+      "code": "MG",
+      "kgRate": 185.34,
+      "regFee": 0.65,
+      "row": 51
+    },
+    {
+      "cn": "马拉维",
+      "en": "Malawi",
+      "code": "MW",
+      "kgRate": 140.38,
+      "regFee": 0.65,
+      "row": 52
+    },
+    {
+      "cn": "马尔代夫",
+      "en": "Maldives",
+      "code": "MV",
+      "kgRate": 140.38,
+      "regFee": 0.65,
+      "row": 53
+    },
+    {
+      "cn": "马里",
+      "en": "Mali",
+      "code": "ML",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 54
+    },
+    {
+      "cn": "毛里求斯",
+      "en": "Mauritius",
+      "code": "MU",
+      "kgRate": 160.37,
+      "regFee": 0.65,
+      "row": 55
+    },
+    {
+      "cn": "摩纳哥",
+      "en": "Monaco",
+      "code": "MC",
+      "kgRate": 185.34,
+      "regFee": 3.51,
+      "row": 56
+    },
+    {
+      "cn": "蒙古",
+      "en": "Mongolia",
+      "code": "MN",
+      "kgRate": 149.38,
+      "regFee": 0.65,
+      "row": 57
+    },
+    {
+      "cn": "黑山",
+      "en": "Montenegro",
+      "code": "ME",
+      "kgRate": 170.36,
+      "regFee": 0.65,
+      "row": 58
+    },
+    {
+      "cn": "莫桑比克",
+      "en": "Mozambique",
+      "code": "MZ",
+      "kgRate": 187.34,
+      "regFee": 0.65,
+      "row": 59
+    },
+    {
+      "cn": "缅甸",
+      "en": "Myanmar",
+      "code": "MM",
+      "kgRate": 114.41,
+      "regFee": 0.65,
+      "row": 60
+    },
+    {
+      "cn": "纳米比亚",
+      "en": "Namibia",
+      "code": "NA",
+      "kgRate": 183.34,
+      "regFee": 0.65,
+      "row": 61
+    },
+    {
+      "cn": "尼加拉瓜",
+      "en": "Nicaragua",
+      "code": "NI",
+      "kgRate": 200.51,
+      "regFee": 7.25,
+      "row": 62
+    },
+    {
+      "cn": "挪威",
+      "en": "Norway",
+      "code": "NO",
+      "kgRate": 123.53,
+      "regFee": 7.72,
+      "row": 63
+    },
+    {
+      "cn": "巴布亚新几内亚",
+      "en": "Papua New Guinea",
+      "code": "PG",
+      "kgRate": 180.35,
+      "regFee": 2,
+      "row": 64
+    },
+    {
+      "cn": "菲律宾",
+      "en": "Philippines",
+      "code": "PH",
+      "kgRate": 115.41,
+      "regFee": 0.65,
+      "row": 65
+    },
+    {
+      "cn": "葡萄牙",
+      "en": "Portugal",
+      "code": "PT",
+      "kgRate": 108.31,
+      "regFee": 7.1,
+      "row": 66
+    },
+    {
+      "cn": "波多黎各(美)",
+      "en": "Puerto Rico",
+      "code": "PR",
+      "kgRate": 189.34,
+      "regFee": 4.81,
+      "row": 67
+    },
+    {
+      "cn": "摩尔多瓦",
+      "en": "Republic of Moldova",
+      "code": "MD",
+      "kgRate": 183.34,
+      "regFee": 0.65,
+      "row": 68
+    },
+    {
+      "cn": "圣马力诺",
+      "en": "San Marino",
+      "code": "SM",
+      "kgRate": 203.33,
+      "regFee": 0.65,
+      "row": 69
+    },
+    {
+      "cn": "塞内加尔",
+      "en": "Senegal",
+      "code": "SN",
+      "kgRate": 218.31,
+      "regFee": 0.65,
+      "row": 70
+    },
+    {
+      "cn": "塞尔维亚",
+      "en": "Serbia",
+      "code": "RS",
+      "kgRate": 116.28,
+      "regFee": 0.87,
+      "row": 71
+    },
+    {
+      "cn": "塞舌尔",
+      "en": "Seychelles",
+      "code": "SC",
+      "kgRate": 175.35,
+      "regFee": 0.65,
+      "row": 72
+    },
+    {
+      "cn": "斯洛伐克",
+      "en": "Slovakia",
+      "code": "SK",
+      "kgRate": 145.38,
+      "regFee": 0.65,
+      "row": 73
+    },
+    {
+      "cn": "斯洛文尼亚",
+      "en": "Slovenia",
+      "code": "SI",
+      "kgRate": 170.64,
+      "regFee": 0.75,
+      "row": 74
+    },
+    {
+      "cn": "所罗门群岛",
+      "en": "Solomon Islands",
+      "code": "SB",
+      "kgRate": 191.34,
+      "regFee": 0.65,
+      "row": 75
+    },
+    {
+      "cn": "韩国",
+      "en": "Korea",
+      "code": "KR",
+      "kgRate": 49.47,
+      "regFee": 6.71,
+      "row": 76
+    },
+    {
+      "cn": "斯威士兰",
+      "en": "Swaziland",
+      "code": "SZ",
+      "kgRate": 184.34,
+      "regFee": 1.51,
+      "row": 77
+    },
+    {
+      "cn": "塔吉克斯坦",
+      "en": "Tajikistan",
+      "code": "TJ",
+      "kgRate": 93.92,
+      "regFee": 6.8,
+      "row": 78
+    },
+    {
+      "cn": "多哥",
+      "en": "Togo",
+      "code": "TG",
+      "kgRate": 140.38,
+      "regFee": 0.65,
+      "row": 79
+    },
+    {
+      "cn": "汤加",
+      "en": "Tonga",
+      "code": "TO",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 80
+    },
+    {
+      "cn": "土耳其",
+      "en": "Turkey",
+      "code": "TR",
+      "kgRate": 145.38,
+      "regFee": 0.65,
+      "row": 81
+    },
+    {
+      "cn": "土库曼斯坦",
+      "en": "Turkmenistan",
+      "code": "TM",
+      "kgRate": 98.42,
+      "regFee": 7,
+      "row": 82
+    },
+    {
+      "cn": "乌干达",
+      "en": "Uganda",
+      "code": "UG",
+      "kgRate": 193.34,
+      "regFee": 0.65,
+      "row": 83
+    },
+    {
+      "cn": "坦桑尼亚",
+      "en": "United Republic of Tanzania",
+      "code": "TZ",
+      "kgRate": 188.34,
+      "regFee": 0.65,
+      "row": 84
+    },
+    {
+      "cn": "乌兹别克斯坦",
+      "en": "Uzbekistan",
+      "code": "UZ",
+      "kgRate": 147.38,
+      "regFee": 0.65,
+      "row": 85
+    },
+    {
+      "cn": "瓦努阿图",
+      "en": "Vanuatu",
+      "code": "VU",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 86
+    },
+    {
+      "cn": "越南",
+      "en": "Vietnam",
+      "code": "VN",
+      "kgRate": 115.41,
+      "regFee": 0.65,
+      "row": 87
+    },
+    {
+      "cn": "赞比亚",
+      "en": "Zambia",
+      "code": "ZM",
+      "kgRate": 184.34,
+      "regFee": 0.65,
+      "row": 88
+    },
+    {
+      "cn": "文莱",
+      "en": "Negara Brunei Darussalam",
+      "code": "BN",
+      "kgRate": 116.4,
+      "regFee": 0.65,
+      "row": 89
+    },
+    {
+      "cn": "格鲁吉亚",
+      "en": "Georgia",
+      "code": "GE",
+      "kgRate": 145.38,
+      "regFee": 0.65,
+      "row": 90
+    },
+    {
+      "cn": "几内亚",
+      "en": "Guinea",
+      "code": "GN",
+      "kgRate": 201.33,
+      "regFee": 0.65,
+      "row": 91
+    },
+    {
+      "cn": "斯瓦尔巴群岛(挪)",
+      "en": "Svalbard and Jan Mayen",
+      "code": "SJ",
+      "kgRate": 379.17,
+      "regFee": 0.65,
+      "row": 92
+    },
+    {
+      "cn": "圣马丁(荷)",
+      "en": "Sint Maarten (Netherlands)",
+      "code": "SX",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 93
+    },
+    {
+      "cn": "萨尔瓦多",
+      "en": "El Salvador",
+      "code": "SV",
+      "kgRate": 230.38,
+      "regFee": 0.75,
+      "row": 94
+    },
+    {
+      "cn": "特立尼达和多巴哥",
+      "en": "Trinidad and Tobago",
+      "code": "TT",
+      "kgRate": 140.38,
+      "regFee": 0.65,
+      "row": 95
+    },
+    {
+      "cn": "荷属安的列斯群岛",
+      "en": "Netherlands Antilles",
+      "code": "AN",
+      "kgRate": 85.43,
+      "regFee": 9.5,
+      "row": 96
+    },
+    {
+      "cn": "马绍尔群岛",
+      "en": "The Republic of Marshall Islands",
+      "code": "MH",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 97
+    },
+    {
+      "cn": "东萨摩亚(美)",
+      "en": "American Samoa",
+      "code": "AS",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 98
+    },
+    {
+      "cn": "维尔京群岛(美)",
+      "en": "U.S.Virgin Islands",
+      "code": "VI",
+      "kgRate": 225.31,
+      "regFee": 0.65,
+      "row": 99
+    },
+    {
+      "cn": "密克罗尼西亚(美)",
+      "en": "Micronesia",
+      "code": "FM",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 100
+    },
+    {
+      "cn": "圣皮埃尔岛及密克隆岛",
+      "en": "Saint Pierre and Miquelon",
+      "code": "PM",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 101
+    },
+    {
+      "cn": "维尔京群岛(英)",
+      "en": "British Virgin Islands",
+      "code": "VG",
+      "kgRate": 160.37,
+      "regFee": 1.51,
+      "row": 102
+    },
+    {
+      "cn": "格林纳达",
+      "en": "Grenada",
+      "code": "GD",
+      "kgRate": 138.39,
+      "regFee": 5.11,
+      "row": 103
+    },
+    {
+      "cn": "安圭拉岛(英)",
+      "en": "Anguilla",
+      "code": "AI",
+      "kgRate": 379.17,
+      "regFee": 0.65,
+      "row": 104
+    },
+    {
+      "cn": "根西岛(英)",
+      "en": "Bailiwick of Guernsey",
+      "code": "GG",
+      "kgRate": 75.44,
+      "regFee": 8,
+      "row": 105
+    },
+    {
+      "cn": "瓦里斯和富士那群岛(法)",
+      "en": "Wallis And Futuna",
+      "code": "WF",
+      "kgRate": 379.17,
+      "regFee": 0.65,
+      "row": 106
+    },
+    {
+      "cn": "开曼群岛(英)",
+      "en": "Cayman Islands",
+      "code": "KY",
+      "kgRate": 379.17,
+      "regFee": 0.65,
+      "row": 107
+    },
+    {
+      "cn": "马里亚纳群岛",
+      "en": "Northern Mariana Islands",
+      "code": "MP",
+      "kgRate": 379.17,
+      "regFee": 0.65,
+      "row": 108
+    },
+    {
+      "cn": "科克群岛(新)",
+      "en": "Cook Islands",
+      "code": "CK",
+      "kgRate": 170.36,
+      "regFee": 2,
+      "row": 109
+    },
+    {
+      "cn": "圣卢西亚",
+      "en": "Saint Lucia",
+      "code": "LC",
+      "kgRate": 141.38,
+      "regFee": 5.2,
+      "row": 110
+    },
+    {
+      "cn": "尼泊尔",
+      "en": "Nepal",
+      "code": "NP",
+      "kgRate": 162.7,
+      "regFee": 1.5,
+      "row": 111
+    },
+    {
+      "cn": "巴拿马",
+      "en": "Panama",
+      "code": "PA",
+      "kgRate": 203.2,
+      "regFee": 1.5,
+      "row": 112
+    },
+    {
+      "cn": "卢旺达",
+      "en": "Rwanda",
+      "code": "RW",
+      "kgRate": 187,
+      "regFee": 1.5,
+      "row": 113
+    },
+    {
+      "cn": "南非",
+      "en": "South Africa",
+      "code": "ZA",
+      "kgRate": 161,
+      "regFee": 1.5,
+      "row": 114
+    },
+    {
+      "cn": "突尼斯",
+      "en": "Tunisia",
+      "code": "TN",
+      "kgRate": 154.6,
+      "regFee": 1.5,
+      "row": 115
+    },
+    {
+      "cn": "委内瑞拉",
+      "en": "Venezuela",
+      "code": "VE",
+      "kgRate": 203.2,
+      "regFee": 1.5,
+      "row": 116
+    },
+    {
+      "cn": "玻利维亚",
+      "en": "Bolivia",
+      "code": "BO",
+      "kgRate": 219.4,
+      "regFee": 1.5,
+      "row": 117
+    },
+    {
+      "cn": "博茨瓦纳",
+      "en": "Botswana",
+      "code": "BW",
+      "kgRate": 195.1,
+      "regFee": 1.5,
+      "row": 118
+    },
+    {
+      "cn": "厄瓜多尔",
+      "en": "Ecuador",
+      "code": "EC",
+      "kgRate": 203.2,
+      "regFee": 1.5,
+      "row": 119
+    },
+    {
+      "cn": "洪都拉斯",
+      "en": "Honduras",
+      "code": "HN",
+      "kgRate": 251.8,
+      "regFee": 1.5,
+      "row": 120
+    },
+    {
+      "cn": "印度",
+      "en": "India",
+      "code": "IN",
+      "kgRate": 161,
+      "regFee": 1.5,
+      "row": 121
+    },
+    {
+      "cn": "科特迪瓦",
+      "en": "Cote D'Ivoire",
+      "code": "CI",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 122
+    },
+    {
+      "cn": "牙买加",
+      "en": "Jamaica",
+      "code": "JM",
+      "kgRate": 222.8,
+      "regFee": 1.2,
+      "row": 123
+    },
+    {
+      "cn": "蒙特塞拉特岛(英)",
+      "en": "Montserrat",
+      "code": "MS",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 124
+    },
+    {
+      "cn": "瑙鲁",
+      "en": "Nauru",
+      "code": "NR",
+      "kgRate": 172.3,
+      "regFee": 2.55,
+      "row": 125
+    },
+    {
+      "cn": "阿鲁巴岛",
+      "en": "Aruba",
+      "code": "AW",
+      "kgRate": 111.1,
+      "regFee": 5.95,
+      "row": 126
+    },
+    {
+      "cn": "诺福克岛(澳)",
+      "en": "Norfolk Island",
+      "code": "NF",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 127
+    },
+    {
+      "cn": "圣文森特岛(英)",
+      "en": "Saint Vincent and the Grenadines",
+      "code": "VC",
+      "kgRate": 101.6,
+      "regFee": 5.95,
+      "row": 128
+    },
+    {
+      "cn": "圣多美和普林西比",
+      "en": "Sao Tome and Principe",
+      "code": "ST",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 129
+    },
+    {
+      "cn": "巴哈马国",
+      "en": "The Commonwealth of The Bahamas",
+      "code": "BS",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 130
+    },
+    {
+      "cn": "梵蒂冈",
+      "en": "The Vatican City State",
+      "code": "VA",
+      "kgRate": 136.9,
+      "regFee": 1.2,
+      "row": 131
+    },
+    {
+      "cn": "东帝汶",
+      "en": "Timor-Leste",
+      "code": "TL",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 132
+    },
+    {
+      "cn": "巴巴多斯",
+      "en": "Barbados",
+      "code": "BB",
+      "kgRate": 222.8,
+      "regFee": 1.2,
+      "row": 133
+    },
+    {
+      "cn": "特克斯和凯科斯群岛(英)",
+      "en": "Turks and Caicos Islands",
+      "code": "TC",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 134
+    },
+    {
+      "cn": "图瓦卢",
+      "en": "Tuvalu",
+      "code": "TV",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 135
+    },
+    {
+      "cn": "西撒哈拉",
+      "en": "Western sahara",
+      "code": "EH",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 136
+    },
+    {
+      "cn": "伯利兹",
+      "en": "Belize",
+      "code": "BZ",
+      "kgRate": 149,
+      "regFee": 7.05,
+      "row": 137
+    },
+    {
+      "cn": "百慕大群岛(英)",
+      "en": "Bermuda",
+      "code": "BM",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 138
+    },
+    {
+      "cn": "圣诞岛",
+      "en": "Christmas Island",
+      "code": "CX",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 139
+    },
+    {
+      "cn": "多米尼克国",
+      "en": "Dominica",
+      "code": "DM",
+      "kgRate": 263.2,
+      "regFee": 4.65,
+      "row": 140
+    },
+    {
+      "cn": "多米尼加共和国",
+      "en": "Dominican Republic",
+      "code": "DO",
+      "kgRate": 178.3,
+      "regFee": 2.05,
+      "row": 141
+    },
+    {
+      "cn": "法属波里尼西亚",
+      "en": "French Polynesia",
+      "code": "PF",
+      "kgRate": 170.36,
+      "regFee": 0.65,
+      "row": 142
+    },
+    {
+      "cn": "格陵兰岛",
+      "en": "Greenland",
+      "code": "GL",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 143
+    },
+    {
+      "cn": "海地",
+      "en": "Haiti",
+      "code": "HT",
+      "kgRate": 149,
+      "regFee": 7.05,
+      "row": 144
+    },
+    {
+      "cn": "伊拉克",
+      "en": "Iraq",
+      "code": "IQ",
+      "kgRate": 383.3,
+      "regFee": 1.2,
+      "row": 145
+    },
+    {
+      "cn": "斯里兰卡",
+      "en": "Sri Lanka",
+      "code": "LK",
+      "kgRate": 155.37,
+      "regFee": 1.51,
+      "row": 146
+    },
+    {
+      "cn": "波兰",
+      "en": "Poland",
+      "code": "PL",
+      "kgRate": 54.91,
+      "regFee": 5.05,
+      "row": 152
+    },
+    {
+      "cn": "克罗地亚",
+      "en": "Croatia",
+      "code": "HR",
+      "kgRate": 170.64,
+      "regFee": 0.75,
+      "row": 157
+    },
+    {
+      "cn": "塞浦路斯",
+      "en": "Cyprus",
+      "code": "CY",
+      "kgRate": 156.37,
+      "regFee": 1.51,
+      "row": 158
+    },
+    {
+      "cn": "捷克",
+      "en": "Czech Republic",
+      "code": "CZ",
+      "kgRate": 181.93,
+      "regFee": 1.22,
+      "row": 159
+    },
+    {
+      "cn": "爱沙尼亚",
+      "en": "Estonia",
+      "code": "EE",
+      "kgRate": 202.42,
+      "regFee": 0.98,
+      "row": 160
+    },
+    {
+      "cn": "希腊",
+      "en": "Greece",
+      "code": "GR",
+      "kgRate": 98.75,
+      "regFee": 6.4,
+      "row": 161
+    },
+    {
+      "cn": "匈牙利",
+      "en": "Hungary",
+      "code": "HU",
+      "kgRate": 72.44,
+      "regFee": 5.3,
+      "row": 162
+    },
+    {
+      "cn": "日本",
+      "en": "Japan",
+      "code": "JP",
+      "kgRate": 46.56,
+      "regFee": 7.66,
+      "row": 163
+    },
+    {
+      "cn": "拉脱维亚",
+      "en": "Latvia",
+      "code": "LV",
+      "kgRate": 80.6,
+      "regFee": 6.1,
+      "row": 164
+    },
+    {
+      "cn": "立陶宛",
+      "en": "Lithuania",
+      "code": "LT",
+      "kgRate": 175.35,
+      "regFee": 1.05,
+      "row": 165
+    }
+  ],
+  "超级经济": [
+    {
+      "cn": "俄罗斯",
+      "en": "Russian Federation",
+      "code": "RU",
+      "kgRate": 23.47,
+      "regFee": 0.22,
+      "row": 11
+    },
+    {
+      "cn": "乌克兰",
+      "en": "Ukraine",
+      "code": "UA",
+      "kgRate": 23.48,
+      "regFee": 0.21,
+      "row": 12
+    },
+    {
+      "cn": "白俄罗斯",
+      "en": "Belarus",
+      "code": "BY",
+      "kgRate": 19,
+      "regFee": 0.15,
+      "row": 13
+    },
+    {
+      "cn": "哈萨克斯坦",
+      "en": "Kazakhstan",
+      "code": "KZ",
+      "kgRate": 14.14,
+      "regFee": 0.17,
+      "row": 14
+    },
+    {
+      "cn": "北马其顿",
+      "en": "North Macedonia",
+      "code": "MK",
+      "kgRate": 17.71,
+      "regFee": 0.15,
+      "row": 15
+    },
+    {
+      "cn": "塞尔维亚",
+      "en": "Serbia",
+      "code": "RS",
+      "kgRate": 16.09,
+      "regFee": 0.15,
+      "row": 16
+    },
+    {
+      "cn": "土耳其",
+      "en": "Turkey",
+      "code": "TR",
+      "kgRate": 17.62,
+      "regFee": 0.15,
+      "row": 17
+    },
+    {
+      "cn": "保加利亚",
+      "en": "Bulgaria",
+      "code": "BG",
+      "kgRate": 11.76,
+      "regFee": 0.21,
+      "row": 18
+    },
+    {
+      "cn": "克罗地亚",
+      "en": "Croatia",
+      "code": "HR",
+      "kgRate": 6.6,
+      "regFee": 1.39,
+      "row": 19
+    },
+    {
+      "cn": "塞浦路斯",
+      "en": "Cyprus",
+      "code": "CY",
+      "kgRate": 12.64,
+      "regFee": 0.21,
+      "row": 20
+    },
+    {
+      "cn": "捷克",
+      "en": "Czech Republic",
+      "code": "CZ",
+      "kgRate": 6.3,
+      "regFee": 1.27,
+      "row": 21
+    },
+    {
+      "cn": "爱沙尼亚",
+      "en": "Estonia",
+      "code": "EE",
+      "kgRate": 6.96,
+      "regFee": 1.4,
+      "row": 22
+    },
+    {
+      "cn": "芬兰",
+      "en": "Finland",
+      "code": "FI",
+      "kgRate": 5.5,
+      "regFee": 3,
+      "row": 23
+    },
+    {
+      "cn": "匈牙利",
+      "en": "Hungary",
+      "code": "HU",
+      "kgRate": 5.93,
+      "regFee": 1.12,
+      "row": 24
+    },
+    {
+      "cn": "拉脱维亚",
+      "en": "Latvia",
+      "code": "LV",
+      "kgRate": 5.85,
+      "regFee": 1.3,
+      "row": 25
+    },
+    {
+      "cn": "立陶宛",
+      "en": "Lithuania",
+      "code": "LT",
+      "kgRate": 5.5,
+      "regFee": 1.11,
+      "row": 26
+    },
+    {
+      "cn": "马耳他",
+      "en": "Malta",
+      "code": "MT",
+      "kgRate": 13.47,
+      "regFee": 0.21,
+      "row": 27
+    },
+    {
+      "cn": "葡萄牙",
+      "en": "Portugal",
+      "code": "PT",
+      "kgRate": 6.98,
+      "regFee": 1.54,
+      "row": 28
+    },
+    {
+      "cn": "斯洛伐克",
+      "en": "Slovakia",
+      "code": "SK",
+      "kgRate": 5.77,
+      "regFee": 1.16,
+      "row": 29
+    },
+    {
+      "cn": "斯洛文尼亚",
+      "en": "Slovenia",
+      "code": "SI",
+      "kgRate": 4.31,
+      "regFee": 2,
+      "row": 30
+    }
+  ],
+  "无忧物流-特惠": [
+    {
+      "cn": "俄罗斯",
+      "en": "Russian Federation",
+      "code": "RU",
+      "kgRate": 21.81,
+      "regFee": 0.76,
+      "row": 12
+    },
+    {
+      "cn": "乌克兰",
+      "en": "Ukraine",
+      "code": "UA",
+      "kgRate": 19.32,
+      "regFee": 0.76,
+      "row": 13
+    },
+    {
+      "cn": "白俄罗斯",
+      "en": "Belarus",
+      "code": "BY",
+      "kgRate": 23.1,
+      "regFee": 0.65,
+      "row": 14
+    },
+    {
+      "cn": "波兰",
+      "en": "Poland",
+      "code": "PL",
+      "kgRate": 8.55,
+      "regFee": 0.98,
+      "row": 19
+    },
+    {
+      "cn": "葡萄牙",
+      "en": "Portugal",
+      "code": "PT",
+      "kgRate": 19.72,
+      "regFee": 1.1,
+      "row": 20
+    },
+    {
+      "cn": "罗马尼亚",
+      "en": "Romania",
+      "code": "RO",
+      "kgRate": 8,
+      "regFee": 6.98,
+      "row": 21
+    },
+    {
+      "cn": "塞浦路斯",
+      "en": "Cyprus",
+      "code": "CY",
+      "kgRate": 13,
+      "regFee": 0.25,
+      "row": 22
+    },
+    {
+      "cn": "马耳他",
+      "en": "Malta",
+      "code": "MT",
+      "kgRate": 14,
+      "regFee": 0.25,
+      "row": 23
+    },
+    {
+      "cn": "拉脱维亚",
+      "en": "Latvia",
+      "code": "LV",
+      "kgRate": 12,
+      "regFee": 1.2,
+      "row": 24
+    },
+    {
+      "cn": "以色列",
+      "en": "Israel",
+      "code": "IL",
+      "kgRate": 18.01,
+      "regFee": 1.45,
+      "row": 25
+    },
+    {
+      "cn": "挪威",
+      "en": "Norway",
+      "code": "NO",
+      "kgRate": 16,
+      "regFee": 1.13,
+      "row": 26
+    },
+    {
+      "cn": "斯里兰卡",
+      "en": "Sri Lanka",
+      "code": "LK",
+      "kgRate": 26,
+      "regFee": 0.3,
+      "row": 27
+    },
+    {
+      "cn": "捷克",
+      "en": "Czech Republic",
+      "code": "CZ",
+      "kgRate": 9.93,
+      "regFee": 1.35,
+      "row": 32
+    },
+    {
+      "cn": "斯洛伐克",
+      "en": "Slovakia",
+      "code": "SK",
+      "kgRate": 23.67,
+      "regFee": 0.11,
+      "row": 33
+    },
+    {
+      "cn": "匈牙利",
+      "en": "Hungary",
+      "code": "HU",
+      "kgRate": 14.12,
+      "regFee": 0.86,
+      "row": 34
+    },
+    {
+      "cn": "保加利亚",
+      "en": "Bulgaria",
+      "code": "BG",
+      "kgRate": 15.05,
+      "regFee": 0.22,
+      "row": 35
+    },
+    {
+      "cn": "斯洛文尼亚",
+      "en": "Slovenia",
+      "code": "SI",
+      "kgRate": 24.15,
+      "regFee": 0.11,
+      "row": 36
+    },
+    {
+      "cn": "克罗地亚",
+      "en": "Croatia",
+      "code": "HR",
+      "kgRate": 24.15,
+      "regFee": 0.11,
+      "row": 37
+    },
+    {
+      "cn": "韩国",
+      "en": "Korea",
+      "code": "KR",
+      "kgRate": 8.07,
+      "regFee": 1.09,
+      "row": 38
+    },
+    {
+      "cn": "立陶宛",
+      "en": "Lithuania",
+      "code": "LT",
+      "kgRate": 11.05,
+      "regFee": 1.69,
+      "row": 39
+    },
+    {
+      "cn": "爱沙尼亚",
+      "en": "Estonia",
+      "code": "EE",
+      "kgRate": 9.24,
+      "regFee": 1.78,
+      "row": 40
+    },
+    {
+      "cn": "塞尔维亚",
+      "en": "Serbia",
+      "code": "RS",
+      "kgRate": 8.5,
+      "regFee": 1.2,
+      "row": 41
+    },
+    {
+      "cn": "摩尔多瓦",
+      "en": "Republic of Moldova",
+      "code": "MD",
+      "kgRate": 30.1,
+      "regFee": 0.1,
+      "row": 42
+    },
+    {
+      "cn": "西班牙",
+      "en": "Spain",
+      "code": "ES",
+      "kgRate": 8.68,
+      "regFee": 1.85,
+      "row": 47
+    },
+    {
+      "cn": "墨西哥",
+      "en": "Mexico",
+      "code": "MX",
+      "kgRate": 7.15,
+      "regFee": 1.89,
+      "row": 52
+    },
+    {
+      "cn": "瑞典",
+      "en": "Sweden",
+      "code": "SE",
+      "kgRate": 6.51,
+      "regFee": 2.55,
+      "row": 53
+    },
+    {
+      "cn": "丹麦",
+      "en": "Denmark",
+      "code": "DK",
+      "kgRate": 9.27,
+      "regFee": 2.77,
+      "row": 54
+    },
+    {
+      "cn": "爱尔兰",
+      "en": "Ireland",
+      "code": "IE",
+      "kgRate": 10.88,
+      "regFee": 2.63,
+      "row": 55
+    },
+    {
+      "cn": "澳大利亚",
+      "en": "Australia",
+      "code": "AU",
+      "kgRate": 21.84,
+      "regFee": 1.67333864615479,
+      "row": 60
+    }
+  ],
+  "无忧物流-标准": [
+    {
+      "cn": "阿尔巴尼亚",
+      "en": "Albania",
+      "code": "AL",
+      "kgRate": 209.66,
+      "regFee": 18.7,
+      "row": 16
+    },
+    {
+      "cn": "阿尔及利亚",
+      "en": "Algeria",
+      "code": "DZ",
+      "kgRate": 193.26,
+      "regFee": 17,
+      "row": 17
+    },
+    {
+      "cn": "安哥拉",
+      "en": "Angola",
+      "code": "AO",
+      "kgRate": 176.7,
+      "regFee": 17,
+      "row": 18
+    },
+    {
+      "cn": "安提瓜和巴布达",
+      "en": "Antigua and Barbuda",
+      "code": "AG",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 19
+    },
+    {
+      "cn": "亚美尼亚",
+      "en": "Armenia",
+      "code": "AM",
+      "kgRate": 175.2,
+      "regFee": 16.6,
+      "row": 20
+    },
+    {
+      "cn": "阿鲁巴岛",
+      "en": "Aruba",
+      "code": "AW",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 21
+    },
+    {
+      "cn": "澳大利亚",
+      "en": "Australia",
+      "code": "AU",
+      "kgRate": 102.59,
+      "regFee": 18.4,
+      "row": 22
+    },
+    {
+      "cn": "巴林",
+      "en": "Bahrain",
+      "code": "BH",
+      "kgRate": 218.18,
+      "regFee": 17.6,
+      "row": 23
+    },
+    {
+      "cn": "白俄罗斯",
+      "en": "Belarus",
+      "code": "BY",
+      "kgRate": 136,
+      "regFee": 21,
+      "row": 24
+    },
+    {
+      "cn": "布基纳法索",
+      "en": "Burkina Faso",
+      "code": "BF",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 25
+    },
+    {
+      "cn": "加拿大",
+      "en": "Canada",
+      "code": "CA",
+      "kgRate": 122.44,
+      "regFee": 27.6,
+      "row": 26
+    },
+    {
+      "cn": "哥斯达黎加",
+      "en": "Costa Rica",
+      "code": "CR",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 27
+    },
+    {
+      "cn": "萨尔瓦多",
+      "en": "El Salvador",
+      "code": "SV",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 28
+    },
+    {
+      "cn": "赤道几内亚",
+      "en": "Equatorial Guinea",
+      "code": "GQ",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 29
+    },
+    {
+      "cn": "加蓬",
+      "en": "Gabon",
+      "code": "GA",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 30
+    },
+    {
+      "cn": "格鲁吉亚",
+      "en": "Georgia",
+      "code": "GE",
+      "kgRate": 166.6,
+      "regFee": 18.2,
+      "row": 31
+    },
+    {
+      "cn": "圭亚那",
+      "en": "Guyana",
+      "code": "GY",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 32
+    },
+    {
+      "cn": "冰岛",
+      "en": "Iceland",
+      "code": "IS",
+      "kgRate": 190.08,
+      "regFee": 18.7,
+      "row": 33
+    },
+    {
+      "cn": "印度尼西亚",
+      "en": "Indonesia",
+      "code": "ID",
+      "kgRate": 54.6,
+      "regFee": 16.8,
+      "row": 34
+    },
+    {
+      "cn": "科特迪瓦",
+      "en": "Cote D'Ivoire",
+      "code": "CI",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 35
+    },
+    {
+      "cn": "日本",
+      "en": "Japan",
+      "code": "JP",
+      "kgRate": 64.45,
+      "regFee": 21.2,
+      "row": 36
+    },
+    {
+      "cn": "哈萨克斯坦",
+      "en": "Kazakhstan",
+      "code": "KZ",
+      "kgRate": 45,
+      "regFee": 4,
+      "row": 37
+    },
+    {
+      "cn": "利比里亚",
+      "en": "Liberia",
+      "code": "LR",
+      "kgRate": 207.2,
+      "regFee": 17,
+      "row": 38
+    },
+    {
+      "cn": "莫桑比克",
+      "en": "Mozambique",
+      "code": "MZ",
+      "kgRate": 171.5,
+      "regFee": 17,
+      "row": 39
+    },
+    {
+      "cn": "纳米比亚",
+      "en": "Namibia",
+      "code": "NA",
+      "kgRate": 182,
+      "regFee": 17,
+      "row": 40
+    },
+    {
+      "cn": "新西兰",
+      "en": "New Zealand",
+      "code": "NZ",
+      "kgRate": 103.96,
+      "regFee": 31.4,
+      "row": 41
+    },
+    {
+      "cn": "尼日利亚",
+      "en": "Nigeria",
+      "code": "NG",
+      "kgRate": 153.43,
+      "regFee": 17.6,
+      "row": 42
+    },
+    {
+      "cn": "巴基斯坦",
+      "en": "Pakistan",
+      "code": "PK",
+      "kgRate": 129.7,
+      "regFee": 18.6,
+      "row": 43
+    },
+    {
+      "cn": "波多黎各(美)",
+      "en": "Puerto Rico",
+      "code": "PR",
+      "kgRate": 173.3,
+      "regFee": 42.7,
+      "row": 44
+    },
+    {
+      "cn": "留尼汪岛",
+      "en": "Reunion",
+      "code": "RE",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 45
+    },
+    {
+      "cn": "圣卢西亚",
+      "en": "Saint Lucia",
+      "code": "LC",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 46
+    },
+    {
+      "cn": "沙特阿拉伯",
+      "en": "Saudi Arabia",
+      "code": "SA",
+      "kgRate": 197.6,
+      "regFee": 52.43,
+      "row": 47
+    },
+    {
+      "cn": "新加坡",
+      "en": "Singapore",
+      "code": "SG",
+      "kgRate": 70.7,
+      "regFee": 8.1,
+      "row": 48
+    },
+    {
+      "cn": "圣马丁(荷)",
+      "en": "Sint Maarten (Netherlands)",
+      "code": "SX",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 49
+    },
+    {
+      "cn": "所罗门群岛",
+      "en": "Solomon Islands",
+      "code": "SB",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 50
+    },
+    {
+      "cn": "特立尼达和多巴哥",
+      "en": "Trinidad and Tobago",
+      "code": "TT",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 51
+    },
+    {
+      "cn": "土耳其",
+      "en": "Turkey",
+      "code": "TR",
+      "kgRate": 100,
+      "regFee": 20.4,
+      "row": 52
+    },
+    {
+      "cn": "阿拉伯联合酋长国",
+      "en": "United Arab Emirates",
+      "code": "AE",
+      "kgRate": 254.97,
+      "regFee": 15.85,
+      "row": 53
+    },
+    {
+      "cn": "赞比亚",
+      "en": "Zambia",
+      "code": "ZM",
+      "kgRate": 168.3,
+      "regFee": 17,
+      "row": 54
+    },
+    {
+      "cn": "奥兰群岛",
+      "en": "Aland Islands",
+      "code": "AX",
+      "kgRate": 190.6,
+      "regFee": 17,
+      "row": 55
+    },
+    {
+      "cn": "安圭拉岛(英)",
+      "en": "Anguilla",
+      "code": "AI",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 56
+    },
+    {
+      "cn": "南极",
+      "en": "Antarctica",
+      "code": "AQ",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 57
+    },
+    {
+      "cn": "阿根廷",
+      "en": "Argentina",
+      "code": "AR",
+      "kgRate": 191,
+      "regFee": 19.1,
+      "row": 58
+    },
+    {
+      "cn": "阿塞拜疆",
+      "en": "Azerbaijan",
+      "code": "AZ",
+      "kgRate": 184.1,
+      "regFee": 17.7,
+      "row": 59
+    },
+    {
+      "cn": "根西岛(英)",
+      "en": "Bailiwick of Guernsey",
+      "code": "GG",
+      "kgRate": 209.66,
+      "regFee": 18.7,
+      "row": 60
+    },
+    {
+      "cn": "百慕大群岛(英)",
+      "en": "Bermuda",
+      "code": "BM",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 61
+    },
+    {
+      "cn": "玻利维亚",
+      "en": "Bolivia",
+      "code": "BO",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 62
+    },
+    {
+      "cn": "圣诞岛",
+      "en": "Christmas Island",
+      "code": "CX",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 63
+    },
+    {
+      "cn": "科科斯岛",
+      "en": "Cocos (Keeling) Islands",
+      "code": "CC",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 64
+    },
+    {
+      "cn": "哥伦比亚",
+      "en": "Colombia",
+      "code": "CO",
+      "kgRate": 163.22,
+      "regFee": 18.54,
+      "row": 65
+    },
+    {
+      "cn": "刚果",
+      "en": "The Republic of Congo",
+      "code": "CG",
+      "kgRate": 203,
+      "regFee": 17,
+      "row": 66
+    },
+    {
+      "cn": "科克群岛(新)",
+      "en": "Cook Islands",
+      "code": "CK",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 67
+    },
+    {
+      "cn": "多米尼克国",
+      "en": "Dominica",
+      "code": "DM",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 68
+    },
+    {
+      "cn": "多米尼加共和国",
+      "en": "Dominican Republic",
+      "code": "DO",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 69
+    },
+    {
+      "cn": "厄瓜多尔",
+      "en": "Ecuador",
+      "code": "EC",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 70
+    },
+    {
+      "cn": "厄立特里亚",
+      "en": "Eritrea",
+      "code": "ER",
+      "kgRate": 211.5,
+      "regFee": 18,
+      "row": 71
+    },
+    {
+      "cn": "爱沙尼亚",
+      "en": "Estonia",
+      "code": "EE",
+      "kgRate": 91,
+      "regFee": 22,
+      "row": 72
+    },
+    {
+      "cn": "福克兰群岛",
+      "en": "Falkland Islands (Islas Malvinas)",
+      "code": "FK",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 73
+    },
+    {
+      "cn": "加纳",
+      "en": "Ghana",
+      "code": "GH",
+      "kgRate": 171.5,
+      "regFee": 17,
+      "row": 74
+    },
+    {
+      "cn": "几内亚",
+      "en": "Guinea",
+      "code": "GN",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 75
+    },
+    {
+      "cn": "几内亚比绍",
+      "en": "Guinea-bissau",
+      "code": "GW",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 76
+    },
+    {
+      "cn": "洪都拉斯",
+      "en": "Honduras",
+      "code": "HN",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 77
+    },
+    {
+      "cn": "马恩岛(英)",
+      "en": "Isle of Man",
+      "code": "IM",
+      "kgRate": 209.66,
+      "regFee": 18.7,
+      "row": 78
+    },
+    {
+      "cn": "柬埔寨",
+      "en": "Cambodia",
+      "code": "KH",
+      "kgRate": 62.6,
+      "regFee": 17.6,
+      "row": 79
+    },
+    {
+      "cn": "肯尼亚",
+      "en": "Kenya",
+      "code": "KE",
+      "kgRate": 153.4,
+      "regFee": 17,
+      "row": 80
+    },
+    {
+      "cn": "基里巴斯",
+      "en": "Kiribati",
+      "code": "KI",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 81
+    },
+    {
+      "cn": "科威特",
+      "en": "Kuwait",
+      "code": "KW",
+      "kgRate": 240.36,
+      "regFee": 17.6,
+      "row": 82
+    },
+    {
+      "cn": "吉尔吉斯斯坦",
+      "en": "Kyrgyzstan",
+      "code": "KG",
+      "kgRate": 193.8,
+      "regFee": 17,
+      "row": 83
+    },
+    {
+      "cn": "北马其顿",
+      "en": "North Macedonia",
+      "code": "MK",
+      "kgRate": 184.25,
+      "regFee": 18.7,
+      "row": 84
+    },
+    {
+      "cn": "马达加斯加",
+      "en": "Madagascar",
+      "code": "MG",
+      "kgRate": 182,
+      "regFee": 17,
+      "row": 85
+    },
+    {
+      "cn": "马绍尔群岛",
+      "en": "The Republic of Marshall Islands",
+      "code": "MH",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 86
+    },
+    {
+      "cn": "密克罗尼西亚(美)",
+      "en": "Micronesia",
+      "code": "FM",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 87
+    },
+    {
+      "cn": "蒙特塞拉特岛(英)",
+      "en": "Montserrat",
+      "code": "MS",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 88
+    },
+    {
+      "cn": "荷属安的列斯群岛",
+      "en": "Netherlands Antilles",
+      "code": "AN",
+      "kgRate": 225.61,
+      "regFee": 18.7,
+      "row": 89
+    },
+    {
+      "cn": "尼加拉瓜",
+      "en": "Nicaragua",
+      "code": "NI",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 90
+    },
+    {
+      "cn": "纽埃岛(新)",
+      "en": "Niue",
+      "code": "NU",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 91
+    },
+    {
+      "cn": "诺福克岛(澳)",
+      "en": "Norfolk Island",
+      "code": "NF",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 92
+    },
+    {
+      "cn": "马里亚纳群岛",
+      "en": "Northern Mariana Islands",
+      "code": "MP",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 93
+    },
+    {
+      "cn": "阿曼",
+      "en": "Oman",
+      "code": "OM",
+      "kgRate": 211.7,
+      "regFee": 18.1,
+      "row": 94
+    },
+    {
+      "cn": "帕劳(美)",
+      "en": "Palau",
+      "code": "PW",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 95
+    },
+    {
+      "cn": "巴拉圭",
+      "en": "Paraguay",
+      "code": "PY",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 96
+    },
+    {
+      "cn": "卡塔尔",
+      "en": "Qatar",
+      "code": "QA",
+      "kgRate": 225.74,
+      "regFee": 17.6,
+      "row": 97
+    },
+    {
+      "cn": "摩尔多瓦",
+      "en": "Republic of Moldova",
+      "code": "MD",
+      "kgRate": 153.7,
+      "regFee": 28.3,
+      "row": 98
+    },
+    {
+      "cn": "圣赫勒拿",
+      "en": "Saint Helena",
+      "code": "SH",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 99
+    },
+    {
+      "cn": "圣克里斯托弗和尼维斯",
+      "en": "Saint Kitts and Nevis",
+      "code": "KN",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 100
+    },
+    {
+      "cn": "圣皮埃尔岛及密克隆岛",
+      "en": "Saint Pierre and Miquelon",
+      "code": "PM",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 101
+    },
+    {
+      "cn": "圣文森特岛(英)",
+      "en": "Saint Vincent and the Grenadines",
+      "code": "VC",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 102
+    },
+    {
+      "cn": "圣马力诺",
+      "en": "San Marino",
+      "code": "SM",
+      "kgRate": 209.66,
+      "regFee": 18.7,
+      "row": 103
+    },
+    {
+      "cn": "圣多美和普林西比",
+      "en": "Sao Tome and Principe",
+      "code": "ST",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 104
+    },
+    {
+      "cn": "塞舌尔",
+      "en": "Seychelles",
+      "code": "SC",
+      "kgRate": 162,
+      "regFee": 17,
+      "row": 105
+    },
+    {
+      "cn": "南乔治亚与南桑威奇群岛",
+      "en": "South Georgia and The South Sandwich Islands",
+      "code": "SGS",
+      "kgRate": 190.6,
+      "regFee": 17,
+      "row": 106
+    },
+    {
+      "cn": "斯瓦尔巴群岛(挪)",
+      "en": "Svalbard and Jan Mayen",
+      "code": "SJ",
+      "kgRate": 209.66,
+      "regFee": 18.7,
+      "row": 107
+    },
+    {
+      "cn": "斯里兰卡",
+      "en": "Sri Lanka",
+      "code": "LK",
+      "kgRate": 120.7,
+      "regFee": 17,
+      "row": 108
+    },
+    {
+      "cn": "巴哈马国",
+      "en": "The Commonwealth of The Bahamas",
+      "code": "BS",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 109
+    },
+    {
+      "cn": "梵蒂冈",
+      "en": "The Vatican City State",
+      "code": "VA",
+      "kgRate": 209.66,
+      "regFee": 18.7,
+      "row": 110
+    },
+    {
+      "cn": "东帝汶",
+      "en": "Timor-leste",
+      "code": "TL",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 111
+    },
+    {
+      "cn": "托克劳群岛(新)",
+      "en": "Tokelau",
+      "code": "TK",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 112
+    },
+    {
+      "cn": "汤加",
+      "en": "Tonga",
+      "code": "TO",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 113
+    },
+    {
+      "cn": "特克斯和凯科斯群岛(英)",
+      "en": "Turks and Caicos Islands",
+      "code": "TC",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 114
+    },
+    {
+      "cn": "图瓦卢",
+      "en": "Tuvalu",
+      "code": "TV",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 115
+    },
+    {
+      "cn": "坦桑尼亚",
+      "en": "United Republic of Tanzania",
+      "code": "TZ",
+      "kgRate": 168.3,
+      "regFee": 17,
+      "row": 116
+    },
+    {
+      "cn": "美国本土外小岛屿",
+      "en": "United States Minor Outlying Islands",
+      "code": "UM",
+      "kgRate": 163.7,
+      "regFee": 40.3,
+      "row": 117
+    },
+    {
+      "cn": "乌拉圭",
+      "en": "Uruguay",
+      "code": "UY",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 118
+    },
+    {
+      "cn": "乌兹别克斯坦",
+      "en": "Uzbekistan",
+      "code": "UZ",
+      "kgRate": 191.7,
+      "regFee": 17.1,
+      "row": 119
+    },
+    {
+      "cn": "维尔京群岛(英)",
+      "en": "British Virgin Islands",
+      "code": "VG",
+      "kgRate": 217.1,
+      "regFee": 18,
+      "row": 120
+    },
+    {
+      "cn": "瓦里斯和富士那群岛(法)",
+      "en": "Wallis And Futuna",
+      "code": "WF",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 121
+    },
+    {
+      "cn": "西撒哈拉",
+      "en": "Western sahara",
+      "code": "EH",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 122
+    },
+    {
+      "cn": "桑给巴尔",
+      "en": "Zanzibar",
+      "code": "EAZ",
+      "kgRate": 168.3,
+      "regFee": 17,
+      "row": 123
+    },
+    {
+      "cn": "文莱",
+      "en": "Negara Brunei Darussalam",
+      "code": "BN",
+      "kgRate": 148.3,
+      "regFee": 17.6,
+      "row": 124
+    },
+    {
+      "cn": "南苏丹",
+      "en": "South Sudan",
+      "code": "SS",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 125
+    },
+    {
+      "cn": "加勒比荷兰",
+      "en": "Caribbean Netherlands",
+      "code": "BQ",
+      "kgRate": 190.6,
+      "regFee": 17,
+      "row": 126
+    },
+    {
+      "cn": "布韦岛",
+      "en": "Bouvet Island",
+      "code": "BV",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 127
+    },
+    {
+      "cn": "赫德岛和麦克唐纳群岛",
+      "en": "Territory of Heard Island and McDonald Islands",
+      "code": "HM",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 128
+    },
+    {
+      "cn": "英属印度洋领地",
+      "en": "British Indian Ocean Territory",
+      "code": "IO",
+      "kgRate": 209.66,
+      "regFee": 18.7,
+      "row": 129
+    },
+    {
+      "cn": "皮特凯恩群岛",
+      "en": "Pitcairn Islands",
+      "code": "PN",
+      "kgRate": 172.4,
+      "regFee": 17,
+      "row": 130
+    },
+    {
+      "cn": "法属南部和南极领地",
+      "en": "French Southern Territories",
+      "code": "TF",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 131
+    },
+    {
+      "cn": "阿森松岛",
+      "en": "Ascension Island",
+      "code": "ASC",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 132
+    },
+    {
+      "cn": "圣巴泰勒米岛",
+      "en": "Saint Barthelemy",
+      "code": "BL",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 133
+    },
+    {
+      "cn": "奥尔德尼岛",
+      "en": "Alderney",
+      "code": "GBA",
+      "kgRate": 209.66,
+      "regFee": 18.7,
+      "row": 134
+    },
+    {
+      "cn": "中国台湾",
+      "en": "TAIWAN CHINA",
+      "code": "TW",
+      "kgRate": 94.3,
+      "regFee": 17.6,
+      "row": 135
+    },
+    {
+      "cn": "中国香港特别行政区",
+      "en": "HONG KONG CHINA",
+      "code": "HK",
+      "kgRate": 104.5,
+      "regFee": 17.6,
+      "row": 136
+    },
+    {
+      "cn": "南非",
+      "en": "South Africa",
+      "code": "ZA",
+      "kgRate": 138.9,
+      "regFee": 29.3,
+      "row": 137
+    },
+    {
+      "cn": "毛里求斯",
+      "en": "Mauritius",
+      "code": "MU",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 138
+    },
+    {
+      "cn": "佛得角",
+      "en": "Cape Verde",
+      "code": "CV",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 139
+    },
+    {
+      "cn": "埃及",
+      "en": "Egypt",
+      "code": "EG",
+      "kgRate": 187.2,
+      "regFee": 17,
+      "row": 140
+    },
+    {
+      "cn": "突尼斯",
+      "en": "Tunisia",
+      "code": "TN",
+      "kgRate": 194.6,
+      "regFee": 17,
+      "row": 141
+    },
+    {
+      "cn": "津巴布韦",
+      "en": "Zimbabwe",
+      "code": "ZW",
+      "kgRate": 168.3,
+      "regFee": 17,
+      "row": 142
+    },
+    {
+      "cn": "马拉维",
+      "en": "Malawi",
+      "code": "MW",
+      "kgRate": 206.1,
+      "regFee": 17,
+      "row": 143
+    },
+    {
+      "cn": "多哥",
+      "en": "Togo",
+      "code": "TG",
+      "kgRate": 208.2,
+      "regFee": 17,
+      "row": 144
+    },
+    {
+      "cn": "马里",
+      "en": "Mali",
+      "code": "ML",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 145
+    },
+    {
+      "cn": "乍得",
+      "en": "Chad",
+      "code": "TD",
+      "kgRate": 210.3,
+      "regFee": 17,
+      "row": 146
+    },
+    {
+      "cn": "马尔代夫",
+      "en": "Maldives",
+      "code": "MV",
+      "kgRate": 150,
+      "regFee": 18,
+      "row": 147
+    },
+    {
+      "cn": "塞尔维亚",
+      "en": "Serbia",
+      "code": "RS",
+      "kgRate": 150,
+      "regFee": 18,
+      "row": 148
+    },
+    {
+      "cn": "孟加拉国",
+      "en": "Bangladesh",
+      "code": "BD",
+      "kgRate": 175,
+      "regFee": 18,
+      "row": 149
+    },
+    {
+      "cn": "黑山",
+      "en": "Montenegro",
+      "code": "ME",
+      "kgRate": 190,
+      "regFee": 18,
+      "row": 150
+    },
+    {
+      "cn": "乌干达",
+      "en": "Uganda",
+      "code": "UG",
+      "kgRate": 190,
+      "regFee": 18,
+      "row": 151
+    },
+    {
+      "cn": "法属瓜德罗普岛",
+      "en": "Guadeloupe",
+      "code": "GP",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 152
+    },
+    {
+      "cn": "马提尼克岛",
+      "en": "Martinique",
+      "code": "MQ",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 153
+    },
+    {
+      "cn": "法属圭亚那",
+      "en": "Guyane française",
+      "code": "GF",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 154
+    },
+    {
+      "cn": "马约特岛",
+      "en": "Territorial Collectivity of Mayotte",
+      "code": "YT",
+      "kgRate": 205.1,
+      "regFee": 17,
+      "row": 155
+    },
+    {
+      "cn": "博茨瓦纳",
+      "en": "Botswana",
+      "code": "BW",
+      "kgRate": 175,
+      "regFee": 25,
+      "row": 156
+    },
+    {
+      "cn": "塞内加尔",
+      "en": "Senegal",
+      "code": "SN",
+      "kgRate": 205,
+      "regFee": 18,
+      "row": 157
+    },
+    {
+      "cn": "卢旺达",
+      "en": "Rwanda",
+      "code": "RW",
+      "kgRate": 205,
+      "regFee": 18,
+      "row": 158
+    },
+    {
+      "cn": "喀麦隆",
+      "en": "Cameroon",
+      "code": "CM",
+      "kgRate": 175,
+      "regFee": 25,
+      "row": 159
+    },
+    {
+      "cn": "塞浦路斯",
+      "en": "Cyprus",
+      "code": "CY",
+      "kgRate": 168,
+      "regFee": 16,
+      "row": 160
+    },
+    {
+      "cn": "俄罗斯",
+      "en": "Russian Federation",
+      "code": "RU",
+      "kgRate": 81,
+      "regFee": 17,
+      "row": 165
+    },
+    {
+      "cn": "乌克兰",
+      "en": "Ukraine",
+      "code": "UA",
+      "kgRate": 118.98,
+      "regFee": 7.4,
+      "row": 171
+    },
+    {
+      "cn": "美国",
+      "en": "United States",
+      "code": "US",
+      "kgRate": 72.45,
+      "regFee": 30.45,
+      "row": 176
+    },
+    {
+      "cn": "韩国",
+      "en": "Korea",
+      "code": "KR",
+      "kgRate": 29.68,
+      "regFee": 15.9,
+      "row": 181
+    },
+    {
+      "cn": "瑞士",
+      "en": "Switzerland",
+      "code": "CH",
+      "kgRate": 126.82,
+      "regFee": 21.95,
+      "row": 186
+    },
+    {
+      "cn": "波兰",
+      "en": "Poland",
+      "code": "PL",
+      "kgRate": 72.15,
+      "regFee": 11.62,
+      "row": 191
+    },
+    {
+      "cn": "奥地利",
+      "en": "Austria",
+      "code": "AT",
+      "kgRate": 73.5,
+      "regFee": 23.1,
+      "row": 196
+    },
+    {
+      "cn": "比利时",
+      "en": "Belgium",
+      "code": "BE",
+      "kgRate": 75.25,
+      "regFee": 23.4,
+      "row": 197
+    },
+    {
+      "cn": "保加利亚",
+      "en": "Bulgaria",
+      "code": "BG",
+      "kgRate": 131.13,
+      "regFee": 19.45,
+      "row": 198
+    },
+    {
+      "cn": "丹麦",
+      "en": "Denmark",
+      "code": "DK",
+      "kgRate": 71.7,
+      "regFee": 23.8,
+      "row": 199
+    },
+    {
+      "cn": "法国",
+      "en": "France",
+      "code": "FR",
+      "kgRate": 91.74,
+      "regFee": 17.02,
+      "row": 200
+    },
+    {
+      "cn": "德国",
+      "en": "Germany",
+      "code": "DE",
+      "kgRate": 70.44,
+      "regFee": 18.85,
+      "row": 201
+    },
+    {
+      "cn": "爱尔兰",
+      "en": "Ireland",
+      "code": "IE",
+      "kgRate": 90.9,
+      "regFee": 22.46,
+      "row": 202
+    },
+    {
+      "cn": "意大利",
+      "en": "Italy",
+      "code": "IT",
+      "kgRate": 63.8,
+      "regFee": 23.4,
+      "row": 203
+    },
+    {
+      "cn": "拉脱维亚",
+      "en": "Latvia",
+      "code": "LV",
+      "kgRate": 79,
+      "regFee": 23,
+      "row": 204
+    },
+    {
+      "cn": "立陶宛",
+      "en": "Lithuania",
+      "code": "LT",
+      "kgRate": 109.98,
+      "regFee": 24.4,
+      "row": 205
+    },
+    {
+      "cn": "卢森堡",
+      "en": "Luxembourg",
+      "code": "LU",
+      "kgRate": 62.81,
+      "regFee": 22.99,
+      "row": 206
+    },
+    {
+      "cn": "马耳他",
+      "en": "Malta",
+      "code": "MT",
+      "kgRate": 137.39,
+      "regFee": 20.79,
+      "row": 207
+    },
+    {
+      "cn": "罗马尼亚",
+      "en": "Romania",
+      "code": "RO",
+      "kgRate": 70.5,
+      "regFee": 51.41,
+      "row": 208
+    },
+    {
+      "cn": "斯洛伐克",
+      "en": "Slovakia",
+      "code": "SK",
+      "kgRate": 89.99,
+      "regFee": 19.17,
+      "row": 209
+    },
+    {
+      "cn": "斯洛文尼亚",
+      "en": "Slovenia",
+      "code": "SI",
+      "kgRate": 122.3,
+      "regFee": 17,
+      "row": 210
+    },
+    {
+      "cn": "西班牙",
+      "en": "Spain",
+      "code": "ES",
+      "kgRate": 64.67,
+      "regFee": 19.26,
+      "row": 211
+    },
+    {
+      "cn": "瑞典",
+      "en": "Sweden",
+      "code": "SE",
+      "kgRate": 73.8,
+      "regFee": 19.6,
+      "row": 212
+    },
+    {
+      "cn": "英国",
+      "en": "United Kingdom",
+      "code": "GB",
+      "kgRate": 67.76,
+      "regFee": 15.9,
+      "row": 213
+    },
+    {
+      "cn": "克罗地亚",
+      "en": "Croatia",
+      "code": "HR",
+      "kgRate": 85.84,
+      "regFee": 22.04,
+      "row": 218
+    },
+    {
+      "cn": "巴西",
+      "en": "Brazil",
+      "code": "BR",
+      "kgRate": 68.26,
+      "regFee": 29.01,
+      "row": 224
+    },
+    {
+      "cn": "以色列",
+      "en": "Israel",
+      "code": "IL",
+      "kgRate": 161.67,
+      "regFee": 19.4,
+      "row": 229
+    },
+    {
+      "cn": "墨西哥",
+      "en": "Mexico",
+      "code": "MX",
+      "kgRate": 124.2,
+      "regFee": 20.95,
+      "row": 234
+    },
+    {
+      "cn": "智利",
+      "en": "Chile",
+      "code": "CL",
+      "kgRate": 131.56,
+      "regFee": 20.95,
+      "row": 241
+    },
+    {
+      "cn": "马来西亚",
+      "en": "Malaysia",
+      "code": "MY",
+      "kgRate": 18,
+      "regFee": 8,
+      "row": 246
+    },
+    {
+      "cn": "泰国",
+      "en": "Thailand",
+      "code": "TH",
+      "kgRate": 40,
+      "regFee": 14.4,
+      "row": 247
+    },
+    {
+      "cn": "捷克",
+      "en": "Czech Republic",
+      "code": "CZ",
+      "kgRate": 74,
+      "regFee": 20.95,
+      "row": 253
+    },
+    {
+      "cn": "芬兰",
+      "en": "Finland",
+      "code": "FI",
+      "kgRate": 76.09,
+      "regFee": 26.96,
+      "row": 254
+    },
+    {
+      "cn": "希腊",
+      "en": "Greece",
+      "code": "GR",
+      "kgRate": 84.26,
+      "regFee": 27.17,
+      "row": 255
+    },
+    {
+      "cn": "匈牙利",
+      "en": "Hungary",
+      "code": "HU",
+      "kgRate": 84.62,
+      "regFee": 21.35,
+      "row": 256
+    },
+    {
+      "cn": "荷兰",
+      "en": "Netherlands",
+      "code": "NL",
+      "kgRate": 69.03,
+      "regFee": 24.62,
+      "row": 257
+    },
+    {
+      "cn": "葡萄牙",
+      "en": "Portugal",
+      "code": "PT",
+      "kgRate": 85.35,
+      "regFee": 20.95,
+      "row": 258
+    },
+    {
+      "cn": "挪威",
+      "en": "Norway",
+      "code": "NO",
+      "kgRate": 106.5,
+      "regFee": 25.45,
+      "row": 263
+    },
+    {
+      "cn": "秘鲁",
+      "en": "Peru",
+      "code": "PE",
+      "kgRate": 176.19,
+      "regFee": 19.58,
+      "row": 264
+    },
+    {
+      "cn": "摩洛哥",
+      "en": "Morocco",
+      "code": "MA",
+      "kgRate": 140.9,
+      "regFee": 17,
+      "row": 269
+    }
+  ],
+  "无忧物流-陆运大件专线": [
+    {
+      "cn": "俄罗斯",
+      "en": "Russian Federation",
+      "code": "RU",
+      "kgRate": 38,
+      "regFee": 30,
+      "row": 11
+    },
+    {
+      "cn": "乌克兰",
+      "en": "Ukraine",
+      "code": "UA",
+      "kgRate": 37,
+      "regFee": 64,
+      "row": 15
+    },
+    {
+      "cn": "奥地利",
+      "en": "Austria",
+      "code": "AT",
+      "kgRate": 40,
+      "regFee": 82,
+      "row": 20
+    },
+    {
+      "cn": "保加利亚",
+      "en": "Bulgaria",
+      "code": "BG",
+      "kgRate": 50,
+      "regFee": 72,
+      "row": 21
+    },
+    {
+      "cn": "比利时",
+      "en": "Belgium",
+      "code": "BE",
+      "kgRate": 55,
+      "regFee": 76,
+      "row": 22
+    },
+    {
+      "cn": "捷克",
+      "en": "Czech Republic",
+      "code": "CZ",
+      "kgRate": 41,
+      "regFee": 81,
+      "row": 23
+    },
+    {
+      "cn": "丹麦",
+      "en": "Denmark",
+      "code": "DK",
+      "kgRate": 41,
+      "regFee": 77,
+      "row": 24
+    },
+    {
+      "cn": "芬兰",
+      "en": "Finland",
+      "code": "FI",
+      "kgRate": 45,
+      "regFee": 108,
+      "row": 25
+    },
+    {
+      "cn": "法国",
+      "en": "France",
+      "code": "FR",
+      "kgRate": 45,
+      "regFee": 96,
+      "row": 26
+    },
+    {
+      "cn": "德国",
+      "en": "Germany",
+      "code": "DE",
+      "kgRate": 51,
+      "regFee": 68,
+      "row": 27
+    },
+    {
+      "cn": "希腊",
+      "en": "Greece",
+      "code": "GR",
+      "kgRate": 40,
+      "regFee": 131,
+      "row": 28
+    },
+    {
+      "cn": "匈牙利",
+      "en": "Hungary",
+      "code": "HU",
+      "kgRate": 45,
+      "regFee": 76,
+      "row": 29
+    },
+    {
+      "cn": "爱尔兰",
+      "en": "Ireland",
+      "code": "IE",
+      "kgRate": 44,
+      "regFee": 90,
+      "row": 30
+    },
+    {
+      "cn": "意大利",
+      "en": "Italy",
+      "code": "IT",
+      "kgRate": 33,
+      "regFee": 104,
+      "row": 31
+    },
+    {
+      "cn": "拉脱维亚",
+      "en": "Latvia",
+      "code": "LV",
+      "kgRate": 47,
+      "regFee": 86,
+      "row": 32
+    },
+    {
+      "cn": "立陶宛",
+      "en": "Lithuania",
+      "code": "LT",
+      "kgRate": 48,
+      "regFee": 90,
+      "row": 33
+    },
+    {
+      "cn": "卢森堡",
+      "en": "Luxembourg",
+      "code": "LU",
+      "kgRate": 47,
+      "regFee": 75,
+      "row": 34
+    },
+    {
+      "cn": "马耳他",
+      "en": "Malta",
+      "code": "MT",
+      "kgRate": 58,
+      "regFee": 121.2,
+      "row": 35
+    },
+    {
+      "cn": "波兰",
+      "en": "Poland",
+      "code": "PL",
+      "kgRate": 47,
+      "regFee": 85,
+      "row": 36
+    },
+    {
+      "cn": "葡萄牙",
+      "en": "Portugal",
+      "code": "PT",
+      "kgRate": 52,
+      "regFee": 93,
+      "row": 37
+    },
+    {
+      "cn": "罗马尼亚",
+      "en": "Romania",
+      "code": "RO",
+      "kgRate": 41,
+      "regFee": 120.52,
+      "row": 38
+    },
+    {
+      "cn": "斯洛伐克",
+      "en": "Slovakia",
+      "code": "SK",
+      "kgRate": 37,
+      "regFee": 91,
+      "row": 39
+    },
+    {
+      "cn": "斯洛文尼亚",
+      "en": "Slovenia",
+      "code": "SI",
+      "kgRate": 55,
+      "regFee": 86,
+      "row": 40
+    },
+    {
+      "cn": "西班牙",
+      "en": "Spain",
+      "code": "ES",
+      "kgRate": 35,
+      "regFee": 101,
+      "row": 41
+    },
+    {
+      "cn": "瑞典",
+      "en": "Sweden",
+      "code": "SE",
+      "kgRate": 55,
+      "regFee": 96,
+      "row": 42
+    },
+    {
+      "cn": "英国",
+      "en": "United Kingdom",
+      "code": "GB",
+      "kgRate": 46,
+      "regFee": 92,
+      "row": 43
+    },
+    {
+      "cn": "荷兰",
+      "en": "Netherlands",
+      "code": "NL",
+      "kgRate": 48,
+      "regFee": 59,
+      "row": 44
+    },
+    {
+      "cn": "爱沙尼亚",
+      "en": "Estonia",
+      "code": "EE",
+      "kgRate": 50,
+      "regFee": 60,
+      "row": 45
+    }
+  ],
+  "燕文航空挂号小包": [
+    {
+      "cn": "挪威",
+      "en": "Norway",
+      "code": "NO",
+      "kgRate": 66.2,
+      "regFee": 19.2,
+      "row": 11
+    },
+    {
+      "cn": "斯洛文尼亚",
+      "en": "Slovenia",
+      "code": "SI",
+      "kgRate": 76.3,
+      "regFee": 21.3,
+      "row": 12
+    },
+    {
+      "cn": "乌克兰",
+      "en": "Ukraine",
+      "code": "UA",
+      "kgRate": 75.3,
+      "regFee": 13.2,
+      "row": 13
+    },
+    {
+      "cn": "新西兰",
+      "en": "New Zealand",
+      "code": "NZ",
+      "kgRate": 86.4,
+      "regFee": 30.8,
+      "row": 14
+    },
+    {
+      "cn": "印度",
+      "en": "India",
+      "code": "IN",
+      "kgRate": 79.3,
+      "regFee": 27.3,
+      "row": 15
+    },
+    {
+      "cn": "日本",
+      "en": "Japan",
+      "code": "JP",
+      "kgRate": 57.1,
+      "regFee": 17.2,
+      "row": 16
+    }
+  ],
+  "4PX新邮挂号小包": [
+    {
+      "cn": "越南",
+      "en": "Vietnam",
+      "code": "VN",
+      "kgRate": 62.1,
+      "regFee": 16.9,
+      "row": 10
+    },
+    {
+      "cn": "中国香港特别行政区",
+      "en": "HONG KONG CHINA",
+      "code": "HK",
+      "kgRate": 101.5,
+      "regFee": 16.9,
+      "row": 11
+    },
+    {
+      "cn": "新西兰",
+      "en": "New Zealand",
+      "code": "NZ",
+      "kgRate": 67.2,
+      "regFee": 35.7,
+      "row": 12
+    },
+    {
+      "cn": "新加坡",
+      "en": "Singapore",
+      "code": "SG",
+      "kgRate": 69.8,
+      "regFee": 7.4,
+      "row": 13
+    },
+    {
+      "cn": "圣诞岛",
+      "en": "Christmas Island",
+      "code": "CX",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 14
+    },
+    {
+      "cn": "科科斯岛",
+      "en": "Cocos (Keeling) Islands",
+      "code": "CC",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 15
+    },
+    {
+      "cn": "诺福克岛(澳)",
+      "en": "Norfolk Island",
+      "code": "NF",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 16
+    },
+    {
+      "cn": "老挝",
+      "en": "Lao People's Democratic Republic",
+      "code": "LA",
+      "kgRate": 117.2,
+      "regFee": 16.4,
+      "row": 17
+    },
+    {
+      "cn": "基里巴斯",
+      "en": "Kiribati",
+      "code": "KI",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 18
+    },
+    {
+      "cn": "纽埃岛(新)",
+      "en": "Niue",
+      "code": "NU",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 19
+    },
+    {
+      "cn": "马里亚纳群岛",
+      "en": "Northern Mariana Islands",
+      "code": "MP",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 20
+    },
+    {
+      "cn": "帕劳(美)",
+      "en": "Palau",
+      "code": "PW",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 21
+    },
+    {
+      "cn": "西萨摩亚",
+      "en": "Samoa",
+      "code": "WS",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 22
+    },
+    {
+      "cn": "所罗门群岛",
+      "en": "Solomon Islands",
+      "code": "SB",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 23
+    },
+    {
+      "cn": "马绍尔群岛",
+      "en": "The Republic of Marshall Islands",
+      "code": "MH",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 24
+    },
+    {
+      "cn": "东帝汶",
+      "en": "Timor-leste",
+      "code": "TLS",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 25
+    },
+    {
+      "cn": "汤加",
+      "en": "Tonga",
+      "code": "TO",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 26
+    },
+    {
+      "cn": "图瓦卢",
+      "en": "Tuvalu",
+      "code": "TV",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 27
+    },
+    {
+      "cn": "科克群岛(新)",
+      "en": "Cook Islands",
+      "code": "CK",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 28
+    },
+    {
+      "cn": "托克劳群岛(新)",
+      "en": "Tokelau",
+      "code": "TK",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 29
+    },
+    {
+      "cn": "密克罗尼西亚(美)",
+      "en": "Micronesia",
+      "code": "FM",
+      "kgRate": 167.7,
+      "regFee": 16.4,
+      "row": 30
+    },
+    {
+      "cn": "吉尔吉斯斯坦",
+      "en": "Kyrgyzstan",
+      "code": "KG",
+      "kgRate": 188.2,
+      "regFee": 16.4,
+      "row": 31
+    },
+    {
+      "cn": "圣马力诺",
+      "en": "San Marino",
+      "code": "SM",
+      "kgRate": 185.2,
+      "regFee": 16.4,
+      "row": 32
+    },
+    {
+      "cn": "梵蒂冈",
+      "en": "The Vatican City State",
+      "code": "VA",
+      "kgRate": 185.2,
+      "regFee": 16.4,
+      "row": 33
+    },
+    {
+      "cn": "奥尔德尼岛",
+      "en": "Alderney",
+      "code": "GBA",
+      "kgRate": 185.2,
+      "regFee": 16.4,
+      "row": 34
+    },
+    {
+      "cn": "英属印度洋领地",
+      "en": "British Indian Ocean Territory",
+      "code": "IO",
+      "kgRate": 185.2,
+      "regFee": 16.4,
+      "row": 35
+    },
+    {
+      "cn": "加那利群岛",
+      "en": "Canary Islands",
+      "code": "IC",
+      "kgRate": 185.2,
+      "regFee": 16.4,
+      "row": 36
+    },
+    {
+      "cn": "马恩岛(英)",
+      "en": "Isle of Man",
+      "code": "IM",
+      "kgRate": 185.2,
+      "regFee": 16.4,
+      "row": 37
+    },
+    {
+      "cn": "斯瓦尔巴群岛(挪)",
+      "en": "Svalbard and Jan Mayen",
+      "code": "SJ",
+      "kgRate": 185.2,
+      "regFee": 16.4,
+      "row": 38
+    },
+    {
+      "cn": "美国本土外小岛屿",
+      "en": "United States Minor Outlying Islands",
+      "code": "UM",
+      "kgRate": 159.3,
+      "regFee": 38.8,
+      "row": 39
+    },
+    {
+      "cn": "根西岛(英)",
+      "en": "Bailiwick of Guernsey",
+      "code": "GGY",
+      "kgRate": 185.2,
+      "regFee": 16.4,
+      "row": 40
+    },
+    {
+      "cn": "阿富汗",
+      "en": "Afghanistan",
+      "code": "AF",
+      "kgRate": 181.9,
+      "regFee": 16.4,
+      "row": 41
+    },
+    {
+      "cn": "安圭拉岛(英)",
+      "en": "Anguilla",
+      "code": "AI",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 42
+    },
+    {
+      "cn": "安提瓜和巴布达",
+      "en": "Antigua and Barbuda",
+      "code": "AG",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 43
+    },
+    {
+      "cn": "阿鲁巴岛",
+      "en": "Aruba",
+      "code": "AW",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 44
+    },
+    {
+      "cn": "百慕大群岛(英)",
+      "en": "Bermuda",
+      "code": "BM",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 45
+    },
+    {
+      "cn": "维尔京群岛(英)",
+      "en": "British Virgin Islands",
+      "code": "VG",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 46
+    },
+    {
+      "cn": "多米尼克国",
+      "en": "Dominica",
+      "code": "DM",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 47
+    },
+    {
+      "cn": "萨尔瓦多",
+      "en": "El Salvador",
+      "code": "SV",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 48
+    },
+    {
+      "cn": "危地马拉",
+      "en": "Guatemala",
+      "code": "GT",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 49
+    },
+    {
+      "cn": "蒙特塞拉特岛(英)",
+      "en": "Montserrat",
+      "code": "MS",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 50
+    },
+    {
+      "cn": "波多黎各(美)",
+      "en": "Puerto Rico",
+      "code": "PR",
+      "kgRate": 159.3,
+      "regFee": 38.8,
+      "row": 51
+    },
+    {
+      "cn": "留尼汪岛",
+      "en": "Reunion",
+      "code": "RE",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 52
+    },
+    {
+      "cn": "圣巴泰勒米岛",
+      "en": "Saint Barthelemy",
+      "code": "BLM",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 53
+    },
+    {
+      "cn": "圣克里斯托弗和尼维斯",
+      "en": "Saint Kitts and Nevis",
+      "code": "KN",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 54
+    },
+    {
+      "cn": "圣卢西亚",
+      "en": "Saint Lucia",
+      "code": "LC",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 55
+    },
+    {
+      "cn": "圣皮埃尔岛及密克隆岛",
+      "en": "Saint Pierre and Miquelon",
+      "code": "PM",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 56
+    },
+    {
+      "cn": "圣文森特岛(英)",
+      "en": "Saint Vincent and the Grenadines",
+      "code": "VC",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 57
+    },
+    {
+      "cn": "圣马丁(荷)",
+      "en": "Sint Maarten (Netherlands)",
+      "code": "SX",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 58
+    },
+    {
+      "cn": "索马里",
+      "en": "Somalia",
+      "code": "SO",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 59
+    },
+    {
+      "cn": "巴哈马国",
+      "en": "The Commonwealth of The Bahamas",
+      "code": "BS",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 60
+    },
+    {
+      "cn": "特立尼达和多巴哥",
+      "en": "Trinidad and Tobago",
+      "code": "TT",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 61
+    },
+    {
+      "cn": "特克斯和凯科斯群岛(英)",
+      "en": "Turks and Caicos Islands",
+      "code": "TC",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 62
+    },
+    {
+      "cn": "瓦里斯和富士那群岛(法)",
+      "en": "Wallis And Futuna",
+      "code": "WF",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 63
+    },
+    {
+      "cn": "也门",
+      "en": "Yemen",
+      "code": "YE",
+      "kgRate": 199.1,
+      "regFee": 16.4,
+      "row": 64
+    }
+  ]
+}
