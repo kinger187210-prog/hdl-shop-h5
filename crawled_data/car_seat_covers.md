@@ -1,0 +1,16 @@
+# Alibaba Products - Car Seat Covers (Kazakhstan Market)
+
+| Product ID | Product Title | Image URL | Price | Product URL |
+|------------|---------------|-----------|-------|-------------|
+| 1601248975050 | Complete Customized Luxury Nappa Leather Diamond Design Waterproof and… | https://s.alicdn.com/@sc04/kf/H862da8c5b316433bbf755501fd924f0e9.jpg_640x640.jpg | $119.90-129.90 / 5 sets | https://www.alibaba.com/product-detail/Complete-Customized-Luxury-Nappa-Leather-Diamond_1601248975050.html |
+| 1601568595581 | Hot Selling Full Set Universal Fit Waterproof Non-Slip Durable Luxury … | https://s.alicdn.com/@sc04/kf/He2fb38702e184e778eb8920acd8722d1m.jpg_640x640.jpg | $70 / 1 piece | https://www.alibaba.com/product-detail/Hot-Selling-Full-Set-Universal-Fit_1601568595581.html |
+| 1601256183814 | Xiangta Luxury Nappa PU Leather Car Seat Covers High Quality Waterproo… | https://s.alicdn.com/@sc04/kf/Hd8fee61d02c6416692584faad8a5300fh.png_640x640.png | $49.90 / 10 sets | https://www.alibaba.com/product-detail/Xiangta-Luxury-Nappa-PU-Leather-Car_1601256183814.html |
+| 1601718413699 | Customized Leather Car Seat Cover Luxury Waterproof NAPPA Car Seat Cov… | https://s.alicdn.com/@sc04/kf/H7aadc64ee2734398bf38289c07bfa6d1G.jpg_640x640.jpg | $490-499 / 1 dozen | https://www.alibaba.com/product-detail/Customized-Leather-Car-Seat-Cover-Luxury_1601718413699.html |
+| 1601725733219 | Factory Wholesale NAPA Leather Car Seat Cover Full Set Luxury Leopard … | https://s.alicdn.com/@sc04/kf/H22278798eda14d08bfac2833e8512ae4v.png_640x640.png | $80-110 / 10 sets | https://www.alibaba.com/product-detail/Factory-Wholesale-NAPA-Leather-Car-Seat_1601725733219.html |
+| 1601386653826 | Neoprene Waterproof Breathable Car Seat Cover Non-Slip Backing With Sa… | https://s.alicdn.com/@sc04/kf/Hd73eac7c81b84659aad9e378f0c7d02aZ.jpg_640x640.jpg | $5-5.20 / 300 pieces | https://www.alibaba.com/product-detail/Neoprene-Waterproof-Breathable-Car-Seat-Cover_1601386653826.html |
+| 60762089809 | 4 Seasons Universal Washable and Breathable Fabric Car Seat Covers | https://s.alicdn.com/@sc04/kf/H9ed5b742ffbd431d841549abfe763820d.jpg_640x640.jpg | $3.80-6 / 4 sets | https://www.alibaba.com/product-detail/4-Seasons-Universal-Washable-and-Breathable_60762089809.html |
+| 1600075662690 | Universal Size Full Set Polyester Non Woven Car Train Plane Travel Sea… | https://s.alicdn.com/@sc04/kf/H7eb0cade5ca1413289201603a53d6cbaz.jpg_640x640.jpg | $0.79-1.49 / 1000 pieces | https://www.alibaba.com/product-detail/Universal-Size-Full-Set-Polyester-Non_1600075662690.html |
+| 1601278690953 | Wholesale Customized Four Season Universal Breathable Fabric Linen Tru… | https://s.alicdn.com/@sc04/kf/H28b74a26217a49568f865afd08252364z.jpg_640x640.jpg | $35.90 / 10 sets | https://www.alibaba.com/product-detail/Wholesale-Customized-Four-Season-Universal-Breathable_1601278690953.html |
+| 60776871585 | Universal Use Breathable  Polyester Fabric Car Seat Cover Factory Dire… | https://s.alicdn.com/@sc04/kf/HTB1CY8jEh1YBuNjy1zcq6zNcXXaX.jpg_640x640.jpg | $8 / 500 sets | https://www.alibaba.com/product-detail/Universal-Use-Breathable-Polyester-Fabric-Car_60776871585.html |
+
+*(Note: Table truncated. Total 150 entries available in dataset.)*
