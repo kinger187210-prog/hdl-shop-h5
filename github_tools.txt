@@ -1,0 +1,718 @@
+
+  Found 22 tool(s) matching "github":
+
+  list_all_authorizations
+    List all connected (authorized) connectors for the current user.
+    Returns both Phoenix Server built-in connectors (Google, GitHub, Twitter, LinkedIn, Notion,
+    TikTok, CJ, Square) and Composio-managed connectors (Instagram, etc.).
+    
+    Use this tool when the user asks about their connected/authorized apps or connectors,
+    e.g. "What connectors do I have?", "Which apps are connected?", "Show my authorizations".
+    
+    Args:
+        provider: Optional filter by provider name (e.g. "google", "composio", "figma", "higgsfield").
+    meta: toolkit=auth, toolkit_service=admin
+      - provider (string)
+
+  start_github_auth
+    Start GitHub OAuth authorization flow.
+    meta: toolkit=github, toolkit_service=auth
+
+  exchange_github_connector_code
+    Exchange and store a GitHub OAuth code from the Phoenix PC local callback.
+    
+    This tool is used when GitHub authorization redirects to the PC local gateway
+    instead of the MCP public callback. The MCP server performs the code exchange
+    and persists credentials in the same store used by normal GitHub callbacks.
+    meta: toolkit=github, toolkit_service=auth
+      - code (string) (required)
+      - state (string) (required)
+      - redirect_uri (string)
+
+  manage_github_org_access
+    Manage GitHub organization access for the connected OAuth App.
+    
+    Use this tool when:
+    - The user recently joined a new GitHub organization and needs to grant
+      the OAuth App access to it.
+    - An org-scoped operation (list org repos, create repo under org, fork
+      to org) returns 403 because the OAuth App has not been granted access
+      to that organization.
+    - The user wants to review or revoke organization-level access.
+    
+    Re-running start_github_auth does NOT help here — GitHub skips the
+    organization selection screen when the user has already authorized the
+    app. This tool returns a direct link to the GitHub settings page where
+    the user can grant or revoke per-organization access.
+    meta: toolkit=github, toolkit_service=auth
+
+  create_github_repo
+    Create a new GitHub repository, either under the authenticated user
+    or under a GitHub organization.
+    
+    Call this tool when the user asks:
+    - "Create a new repo called my-project"
+    - "Help me set up a new private GitHub repository"
+    - "Initialize a new project on GitHub"
+    - "Create a repo named foo under the my-org organization"
+    
+    Args:
+        name: Repository name (required). Must be unique under the chosen
+              owner (user or org). Example: "my-awesome-project".
+        description: Short description of the repository.
+        private: If True, create a private repo. Default False (public).
+        auto_init: If True, initialize with a README. Default True.
+        org: If provided, create the repo under this GitHub organization
+             instead of the authenticated user's account. The authenticated
+             user must have permission to create repositories in that org
+             (org "Repository creation" policy + sufficient role). When
+             omitted (default), the repo is created under the user's
+             account — backward compatible.
+        user_login: GitHub username whose credential to use. Leave empty to auto-detect.
+    
+    Returns:
+        On success — JSON with the created repo: full_name, html_url, private,
+        description, default_branch, created_at.
+    
+        On failure — single-line error with action suggestion. Common org
+        failures: 403 (insufficient permission / org policy forbids creation),
+        404 (org not found or not visible to the token), 422 (name already
+        taken in the org).
+    meta: toolkit=github, toolkit_service=repos
+      - name (string) (required)
+      - description (string)
+      - private (boolean)
+      - auto_init (boolean)
+      - org (string)
+      - user_login (string)
+
+  fork_github_repo
+    Fork an existing GitHub repository to the authenticated user's account.
+    
+    Call this tool when the user asks:
+    - "Fork facebook/react to my account"
+    - "I want my own copy of this repo"
+    - "Fork this project to my org"
+    
+    Args:
+        owner: Owner of the repository to fork, e.g. "facebook".
+        repo: Repository name to fork, e.g. "react".
+        organization: If provided, fork to this org instead of the user's account.
+                      The user must be a member of the org.
+        name: Custom name for the forked repo. Default is the original repo name.
+        user_login: GitHub username whose credential to use. Leave empty to auto-detect.
+    
+    Returns:
+        On success — JSON with the forked repo: full_name, html_url, private,
+        description, parent (source repo full_name).
+    
+        On failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - organization (string)
+      - name (string)
+      - user_login (string)
+
+  list_github_repos
+    List GitHub repositories accessible to the authenticated user,
+    including **private repos** that are invisible without login.
+    
+    By default, lists repos owned by / accessible to the authenticated user
+    (``GET /user/repos``). When ``organization`` is supplied, the tool
+    switches to listing repos under that organization (``GET /orgs/{org}/repos``);
+    private repos the authenticated user has access to within the org are
+    included.
+    
+    Note: this tool intentionally does NOT accept a ``username`` filter.
+    GitHub's ``GET /users/{username}/repos`` endpoint only ever returns
+    public repositories — even when authenticated and even when the
+    username matches the caller — so exposing it here would mislead users
+    into thinking private repos can be listed by username. To see your
+    own private repos, simply omit ``organization``.
+    
+    Call this tool when the user asks:
+    - "What repos do I have?"
+    - "Show me my private repositories"
+    - "List my recently updated projects"
+    - "Show all repositories under the alibaba organization"
+    
+    Args:
+        user_login: GitHub username whose credential to use. Leave empty to auto-detect.
+        visibility: Filter — "all" (default), "public", or "private".
+            Only applies when listing the authenticated user's own repos
+            (i.e. ``organization`` is not provided).
+        sort: Sort field — "created", "updated" (default), "pushed", or "full_name".
+        per_page: Results per page, 1–100. Default 20.
+        page: Page number starting at 1.
+        organization: If provided, list repositories under this GitHub
+            organization (``GET /orgs/{org}/repos``).
+    
+    Returns:
+        On success — JSON ``{ repos: [...], pagination: {...}, user_login,
+        scope: {...} }``. ``scope`` describes which listing was performed:
+        ``{"type": "self" | "org", "target": <name or null>}``.
+        Each repo: full_name, description, html_url, private, language,
+        stargazers_count, forks_count, updated_at, default_branch.
+    
+        On failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - user_login (string)
+      - visibility (string)
+      - sort (string)
+      - per_page (integer)
+      - page (integer)
+      - organization (string)
+
+  star_github_repo
+    Star a GitHub repository as the authenticated user.
+    
+    Call this tool when the user asks:
+    - "Star this repo"
+    - "Add facebook/react to my stars"
+    - "Bookmark this project"
+    
+    Args:
+        owner: Repository owner, e.g. "facebook".
+        repo: Repository name, e.g. "react".
+        user_login: GitHub username whose credential to use. Leave empty to auto-detect.
+    
+    Returns:
+        On success — JSON ``{ starred: true, repo: "owner/repo" }``
+    
+        On failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - user_login (string)
+
+  unstar_github_repo
+    Unstar a GitHub repository as the authenticated user.
+    
+    Call this tool when the user asks:
+    - "Unstar this repo"
+    - "Remove facebook/react from my stars"
+    
+    Args:
+        owner: Repository owner, e.g. "facebook".
+        repo: Repository name, e.g. "react".
+        user_login: GitHub username whose credential to use. Leave empty to auto-detect.
+    
+    Returns:
+        On success — JSON ``{ unstarred: true, repo: "owner/repo" }``
+    
+        On failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - user_login (string)
+
+  list_github_starred
+    List repositories that the authenticated user has starred.
+    
+    This is the user's personal bookmark / collection list on GitHub.
+    
+    Call this tool when the user asks:
+    - "What repos have I starred?"
+    - "Show my GitHub stars"
+    - "What projects did I bookmark?"
+    
+    Args:
+        user_login: GitHub username whose credential to use. Leave empty to auto-detect.
+        sort: Sort field — "created" (default, when you starred it) or "updated".
+        direction: Sort direction — "desc" (default, newest first) or "asc".
+        per_page: Results per page, 1–100. Default 20.
+        page: Page number starting at 1.
+    
+    Returns:
+        On success — JSON ``{ starred_repos: [...], pagination: {...}, user_login }``
+        Each repo: full_name, description, html_url, private, language,
+        stargazers_count, forks_count, updated_at, default_branch.
+    
+        On failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - user_login (string)
+      - sort (string)
+      - direction (string)
+      - per_page (integer)
+      - page (integer)
+
+  list_github_issues
+    List GitHub issues (search-backed; cross-repo or scoped).
+    
+    `filter` is **scope-aware** when omitted: with `owner`/`repo`/`org` it
+    defaults to `"none"` (all items in that scope); without scope it defaults
+    to `"assigned"` (the user's personal dashboard). For when-to-use guidance,
+    user-wording → `filter` mapping, and pagination caveats, see SKILL.md
+    `github-tools` (Pitfalls 3, 4, 6).
+    
+    Args:
+        filter: One of `"assigned"` / `"authored"` / `"mentioned"` / `"none"`.
+            Leave unset for the scope-aware default. `"none"` requires
+            `owner`/`repo`/`org`.
+        state: `"open"` (default) / `"closed"` / `"all"`. Case-insensitive.
+        owner: Repo owner OR user/org login. With `repo` → single repo;
+            alone → `user:owner` (all repos of that owner).
+        repo: Repo name; requires `owner`.
+        org: Limit to repos owned by this org (`org:` qualifier).
+        labels: Comma-separated labels, e.g. `"bug,help wanted"`.
+        sort: `"created"` / `"updated"` (default) / `"comments"`. Descending only.
+        per_page: 1–100, default 20.
+        page: 1-based. GitHub caps search at 1000 results total.
+        user_login: Leave empty to auto-detect the workspace credential.
+    
+    Returns:
+        Success — JSON `{ issues: [...], pagination: {page, per_page, returned,
+        total_count, incomplete_results}, query, user_login }`. Each issue:
+        number, title, state, user, assignees, html_url, comments, labels,
+        created_at, updated_at. `assignees` is a list of login strings (empty
+        when no one is assigned).
+    
+        Failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - filter (string)
+      - state (string)
+      - owner (string)
+      - repo (string)
+      - org (string)
+      - labels (string)
+      - sort (string)
+      - per_page (integer)
+      - page (integer)
+      - user_login (string)
+
+  list_github_pull_requests
+    List GitHub pull requests (search-backed; cross-repo or scoped).
+    
+    `filter` is **scope-aware** when omitted: with `owner`/`repo`/`org` it
+    defaults to `"none"` (all items in that scope); without scope it defaults
+    to `"review_requested"` (PRs awaiting the user's review). Branch filtering
+    (`head` / `base`) is not exposed. For when-to-use guidance, user-wording
+    → `filter` mapping, and pagination caveats, see SKILL.md `github-tools`
+    (Pitfalls 3, 4, 6).
+    
+    Args:
+        filter: One of `"review_requested"` / `"reviewed_by"` / `"authored"`
+            / `"assigned"` / `"mentioned"` / `"none"`. Leave unset for the
+            scope-aware default. `"none"` requires `owner`/`repo`/`org`.
+        state: `"open"` (default) / `"closed"` / `"all"`. Case-insensitive.
+        owner / repo / org / labels: Same semantics as `list_github_issues`.
+        sort: `"created"` / `"updated"` (default) / `"comments"`. Descending only.
+        per_page: 1–100, default 20.
+        page: 1-based. GitHub caps search at 1000 results total.
+        user_login: Leave empty to auto-detect the workspace credential.
+    
+    Returns:
+        Success — JSON `{ pull_requests: [...], pagination: {page, per_page,
+        returned, total_count, incomplete_results}, query, user_login }`.
+        Each PR: number, title, state, draft, user, assignees, html_url,
+        head, base, created_at, updated_at. `assignees` is a list of login
+        strings (empty when no one is assigned). For requested reviewers,
+        use `get_github_pull_request_content`. (`head`/`base` may be null
+        on search results.)
+    
+        Failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - filter (string)
+      - state (string)
+      - owner (string)
+      - repo (string)
+      - org (string)
+      - labels (string)
+      - sort (string)
+      - per_page (integer)
+      - page (integer)
+      - user_login (string)
+
+  get_github_issue_content
+    Drill into a single GitHub issue: body + metadata + first page of
+    comments. Pair with `list_github_issues` to discover `number`.
+    
+    Args:
+        owner: Repo owner, e.g. `"facebook"`.
+        repo: Repo name, e.g. `"react"`.
+        number: Issue number (the integer after `#`).
+        include_comments: If True (default), also fetch the first page of
+            conversation comments. Set False to save one API call when only
+            the body is needed.
+        comments_per_page: 1–100, default 30. Only the first page is fetched;
+            inspect `pagination.has_more` and re-issue with paging if needed.
+        user_login: Leave empty to auto-detect the workspace credential.
+    
+    Returns:
+        Success — JSON `{ issue: {...}, comments: [...] | null, pagination:
+        {comments_returned, comments_per_page, has_more}, user_login }`.
+    
+        Issue fields: number, title, state, state_reason, user, html_url,
+        comments (count), labels, assignees, milestone, body, created_at,
+        updated_at, closed_at.
+        Comment: id, user, html_url, body, created_at, updated_at.
+    
+        Failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - number (integer) (required)
+      - include_comments (boolean)
+      - comments_per_page (integer)
+      - user_login (string)
+
+  get_github_pull_request_content
+    Drill into a single GitHub PR: body + merge state + diff stats + first
+    page of conversation comments + first page of line-level review comments.
+    Pair with `list_github_pull_requests` to discover `number`.
+    
+    Note: returns diff *stats* (`additions`/`deletions`/`changed_files`), not
+    the file-by-file patch. For the patch, point the user at `html_url + ".diff"`.
+    
+    Args:
+        owner: Repo owner, e.g. `"facebook"`.
+        repo: Repo name, e.g. `"react"`.
+        number: PR number (the integer after `#`).
+        include_comments: If True (default), fetch the first page of
+            conversation comments (PR timeline).
+        include_review_comments: If True (default), fetch the first page of
+            line-level review comments anchored to the diff.
+        comments_per_page: 1–100, default 30. Applies to both comment kinds;
+            only one page is fetched per kind. `pagination.*_has_more` tells
+            you whether to follow up.
+        user_login: Leave empty to auto-detect the workspace credential.
+    
+    Returns:
+        Success — JSON `{ pull_request: {...}, comments: [...] | null,
+        review_comments: [...] | null, pagination: {comments_returned,
+        review_comments_returned, comments_per_page, comments_has_more,
+        review_comments_has_more}, user_login }`.
+    
+        PR fields: number, title, state, draft, user, html_url, head, base,
+        labels, assignees, requested_reviewers, milestone, body, merged,
+        mergeable, mergeable_state, merge_commit_sha, commits, additions,
+        deletions, changed_files, review_comments (count), comments (count),
+        created_at, updated_at, closed_at, merged_at.
+        Comment: id, user, html_url, body, created_at, updated_at.
+        Review comment additionally: path, line, side, start_line, start_side,
+        commit_id, in_reply_to_id.
+    
+        Failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - number (integer) (required)
+      - include_comments (boolean)
+      - include_review_comments (boolean)
+      - comments_per_page (integer)
+      - user_login (string)
+
+  create_github_issue
+    Create a new GitHub issue in the given repository.
+    
+    Use this for the **initial creation** only. To later edit, close, comment,
+    or change labels/assignees, call ``update_github_issue``.
+    
+    Args:
+        owner: Repo owner login (user or org).
+        repo: Repo name.
+        title: Issue title (required, non-empty).
+        body: Markdown body of the issue. Optional.
+        labels: Comma-separated label names already defined in the repo,
+            e.g. ``"bug,help wanted"``. Unknown labels will be silently
+            ignored by GitHub.
+        assignees: Comma-separated GitHub logins. The caller must have push
+            access to the repo, and assignees themselves must be repo
+            collaborators — GitHub silently drops invalid assignees.
+        milestone: Numeric milestone id (not the title). Optional.
+        user_login: Leave empty to auto-detect the workspace credential.
+    
+    Returns:
+        Success — JSON of the new issue projected via ``_slim_issue_full``
+        (number, title, state, body, labels, assignees, html_url, ...).
+    
+        Failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - title (string) (required)
+      - body (string)
+      - labels (string)
+      - assignees (string)
+      - milestone (integer)
+      - user_login (string)
+
+  update_github_issue
+    Apply a single mutation to an existing issue, dispatched by ``action``.
+    
+    This tool intentionally aggregates 6 issue write endpoints under one tool
+    so the LLM picks an *intent* (close, comment, ...) instead of one of N
+    similarly-named tools. Each ``action`` consumes a specific subset of the
+    optional parameters; unrelated parameters are ignored.
+    
+    Args:
+        owner: Repo owner.
+        repo: Repo name.
+        number: Issue number.
+        action: One of:
+            - ``"edit"`` — uses ``title`` and/or ``body``. At least one required.
+            - ``"close"`` — closes the issue. Optional ``state_reason``:
+              ``"completed"`` (default) or ``"not_planned"``.
+            - ``"reopen"`` — reopens the issue. No other params.
+            - ``"comment"`` — adds a conversation comment. Requires
+              ``comment_body``.
+            - ``"set_labels"`` — **replaces the full label set**. ``labels``
+              is a comma-separated list (empty string ``""`` clears all labels).
+            - ``"set_assignees"`` — **replaces the full assignee set** by
+              diffing against the current state. ``assignees`` is a
+              comma-separated list of GitHub logins (empty string clears).
+        title: For ``action="edit"``.
+        body: For ``action="edit"``.
+        state_reason: For ``action="close"``.
+        comment_body: For ``action="comment"``.
+        labels: For ``action="set_labels"``.
+        assignees: For ``action="set_assignees"``.
+        user_login: Leave empty to auto-detect the workspace credential.
+    
+    Returns:
+        Success — JSON containing the action taken plus the projected issue
+        (or comment, for ``action="comment"``).
+    
+        Failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - number (integer) (required)
+      - action (string) (required)
+      - title (string)
+      - body (string)
+      - state_reason (string)
+      - comment_body (string)
+      - labels (string)
+      - assignees (string)
+      - user_login (string)
+
+  create_github_pull_request
+    Open a new pull request.
+    
+    Use this for the **initial creation** only. To later edit, close, comment,
+    add reviewers, or change labels/assignees, call ``update_github_pull_request``.
+    To approve / request changes / merge, call ``review_github_pull_request``.
+    
+    Args:
+        owner: Target repo owner.
+        repo: Target repo name.
+        title: PR title (required, non-empty).
+        head: Source branch. For same-repo PRs use ``"feature-branch"``;
+            for cross-fork PRs use ``"fork-owner:feature-branch"``.
+        base: Target branch in the destination repo, e.g. ``"main"``.
+        body: Markdown body. Optional.
+        draft: Open as a draft PR. Defaults to ``False``.
+        user_login: Leave empty to auto-detect the workspace credential.
+    
+    Returns:
+        Success — JSON of the new PR projected via ``_slim_pull_request_full``.
+    
+        Failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - title (string) (required)
+      - head (string) (required)
+      - base (string) (required)
+      - body (string)
+      - draft (boolean)
+      - user_login (string)
+
+  update_github_pull_request
+    Apply a single mutation to an existing pull request, dispatched by ``action``.
+    
+    Mirrors ``update_github_issue`` plus a ``"set_reviewers"`` action.
+    Approve / request changes / merge are intentionally **not** here —
+    use ``review_github_pull_request`` for those (they are review events,
+    not property edits, and merge is destructive).
+    
+    Args:
+        owner: Repo owner.
+        repo: Repo name.
+        number: PR number.
+        action: One of:
+            - ``"edit"`` — uses ``title`` / ``body`` / ``base``. At least one required.
+              ``base`` retargets the PR to a different branch.
+            - ``"close"`` — closes the PR without merging. No other params.
+            - ``"reopen"`` — reopens a closed PR. No other params.
+            - ``"comment"`` — adds a conversation comment via the issues
+              endpoint. Requires ``comment_body``.
+            - ``"set_labels"`` — replaces the full label set. ``labels`` is
+              comma-separated; empty string clears.
+            - ``"set_assignees"`` — replaces the full assignee set
+              (diff-and-apply). ``assignees`` comma-separated; empty clears.
+            - ``"set_reviewers"`` — replaces requested reviewers
+              (diff-and-apply). At least one of ``reviewers`` or
+              ``team_reviewers`` must be provided; pass ``""`` for an
+              already-supplied field to clear that side.
+        title: For ``action="edit"``.
+        body: For ``action="edit"``.
+        base: For ``action="edit"``.
+        comment_body: For ``action="comment"``.
+        labels: For ``action="set_labels"``.
+        assignees: For ``action="set_assignees"``.
+        reviewers: For ``action="set_reviewers"``. Comma-separated user logins.
+        team_reviewers: For ``action="set_reviewers"``. Comma-separated team
+            slugs (org-only).
+        user_login: Leave empty to auto-detect the workspace credential.
+    
+    Returns:
+        Success — JSON containing the action taken plus the projected PR
+        (or comment, for ``action="comment"``).
+    
+        Failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - number (integer) (required)
+      - action (string) (required)
+      - title (string)
+      - body (string)
+      - base (string)
+      - comment_body (string)
+      - labels (string)
+      - assignees (string)
+      - reviewers (string)
+      - team_reviewers (string)
+      - user_login (string)
+
+  review_github_pull_request
+    Submit a review event or merge a pull request.
+    
+    These actions are kept apart from ``update_github_pull_request`` because
+    they are not property edits — a review is an immutable event in the PR
+    timeline, and a merge is destructive (cannot be undone via the API).
+    
+    Args:
+        owner: Repo owner.
+        repo: Repo name.
+        number: PR number.
+        action: One of:
+            - ``"approve"`` — submit an approving review. ``body`` optional.
+            - ``"request_changes"`` — submit a changes-requested review.
+              ``body`` is **required** by GitHub and validated here.
+            - ``"comment"`` — submit a non-blocking review comment. ``body``
+              is **required** when there are no ``line_comments``.
+            - ``"merge"`` — merge the PR. Uses ``merge_method`` /
+              ``commit_title`` / ``commit_message`` / ``sha``.
+        body: Review body markdown. Semantics depend on ``action``; see above.
+        line_comments: Optional line-level comments for the review, each
+            shaped ``{"path": ..., "line": ..., "side": "RIGHT"|"LEFT",
+            "body": ...}``. Only applies to review actions, not ``"merge"``.
+        commit_id: Optional SHA the review should anchor to. Defaults to PR head.
+        merge_method: For ``action="merge"``: ``"merge"`` (default) /
+            ``"squash"`` / ``"rebase"``.
+        commit_title: For ``action="merge"``. Optional.
+        commit_message: For ``action="merge"``. Optional.
+        sha: For ``action="merge"``. If set, GitHub rejects the merge unless
+            the PR head still matches this SHA — defends against merging a
+            stale branch.
+        user_login: Leave empty to auto-detect the workspace credential.
+    
+    Returns:
+        Success — JSON containing the action taken plus the relevant payload
+        (review object for review actions, merge result for merge).
+    
+        Failure — single-line error with action suggestion.
+    meta: toolkit=github, toolkit_service=repos
+      - owner (string) (required)
+      - repo (string) (required)
+      - number (integer) (required)
+      - action (string) (required)
+      - body (string)
+      - line_comments (object[])
+      - commit_id (string)
+      - merge_method (string)
+      - commit_title (string)
+      - commit_message (string)
+      - sha (string)
+      - user_login (string)
+
+  share_article_on_linkedin
+    Share an external article/web link as a LinkedIn post.
+    
+    WHEN TO CALL:
+    - The user wants to share a URL (blog post, news article, product page,
+      GitHub repo, etc.) to LinkedIn with an optional commentary;
+    - The user explicitly asks to "post a link" / "share an article" on
+      LinkedIn. For plain-text posts without any link, use
+      `share_text_on_linkedin` instead.
+    
+    REQUIRED OAUTH SCOPE: `w_member_social`.
+    
+    Args:
+        url: Required. The article / web URL to share. Must be a reachable
+            http(s) URL.
+        text: Optional. Commentary text shown above the link card.
+        title: Optional. Title to display in the link card. If omitted,
+            LinkedIn will try to scrape one from the page.
+        description: Optional. Description to display in the link card.
+        visibility: Optional. `"PUBLIC"` (default) or `"CONNECTIONS"`.
+        linkedin_user_id: Optional. Same semantics as in
+            `get_linkedin_user_info`.
+    
+    Returns:
+        On success — a Markdown confirmation plus a JSON payload with keys
+        `post_id`, `visibility`, `shared_url`.
+        On failure — a single-line reason plus an action suggestion.
+    
+    Example:
+        share_article_on_linkedin(
+            url="https://openai.com/blog/xxx",
+            text="Worth a read.",
+            title="OpenAI Blog",
+            description="Latest model release notes",
+        )
+    meta: toolkit=linkedin, toolkit_service=consumer
+      - url (string) (required)
+      - text (string)
+      - title (string)
+      - description (string)
+      - visibility (string)
+      - linkedin_user_id (string)
+
+  composio_list_apps
+    List the user's connected (authorized) apps on Composio platform.
+    Composio manages OAuth for apps like Instagram, and more.
+    
+    Use this when the user asks about their Composio-connected apps specifically.
+    For a complete list of ALL connected connectors (including Google, GitHub, etc.),
+    use the `list_all_authorizations` tool instead.
+    meta: toolkit=composio, toolkit_service=admin
+
+  composio_connect_app
+    Initiate an OAuth connection via Composio platform.
+    Returns an authorization URL that the user should visit to complete the OAuth flow.
+    
+    The enabled Composio apps are controlled by server config. By default,
+    only Instagram is enabled.
+    
+    For Phoenix built-in connectors (Google, GitHub, Twitter, LinkedIn, Notion, TikTok, Square),
+    use the corresponding `start_<provider>_auth` tool instead (e.g. `start_google_auth`).
+    
+    Instagram publishing guidance:
+    - Do not use browser automation first for Instagram posting. Browser Relay/CDP
+      is not required for Accio-managed Composio Instagram tools.
+    - Before asking the user to authorize again, call COMPOSIO_CHECK_ACTIVE_CONNECTION
+      with toolkit="instagram". If it returns ACTIVE, continue with Instagram MCP
+      publish/media tools instead of opening Instagram in a browser.
+    - For Instagram tools that require ig_user_id, use "me" unless the user
+      provided a specific Instagram Business Account ID. Do not use Composio
+      connected_account_id values such as "ca_*" as ig_user_id.
+    - Only call this tool when no ACTIVE Instagram connection exists or when the
+      user explicitly asks to reconnect / re-authorize.
+    
+    Args:
+        app_name: The name of the app to connect, e.g. "instagram" or "ins".
+        intent: Reserved for desktop client use; do not set this argument from a
+            language model. The default 'auto' is idempotent — when the user
+            already has a healthy ACTIVE connection it is reused without asking
+            the user to authorize again.
+    meta: toolkit=composio, toolkit_service=admin
+      - app_name (string) (required)
+      - intent (string)
+
+  22 tools found
+
