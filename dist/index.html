@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HDL 电商商城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .infinite-scroll-trigger { height: 20px; }
+        .tab-active { color: #2563eb; border-bottom: 2px solid #2563eb; }
+        .category-active { background-color: #f3f4f6; color: #2563eb; font-weight: bold; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen pb-16">
+    <!-- Top Navigation / Search Bar -->
+    <header id="top-nav" class="sticky top-0 z-50 bg-white shadow-sm p-3">
+        <div class="flex items-center space-x-2">
+            <div class="relative flex-1">
+                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </span>
+                <input type="text" id="global-search" placeholder="搜索商品名称或货号..." class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-full leading-5 bg-gray-50 placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+            <button id="search-btn" class="text-blue-600 font-medium px-2">搜索</button>
+        </div>
+    </header>
+
+    <!-- Main Content Views -->
+    <main id="app">
+        <!-- Home View -->
+        <section id="view-home" class="view">
+            <div class="p-3">
+                <div class="mb-4 bg-blue-600 rounded-lg p-6 text-white text-center">
+                    <h1 class="text-2xl font-bold">欢迎光临 HDL 商城</h1>
+                    <p class="mt-2 text-blue-100">精选优质商品，线下快速配送</p>
+                </div>
+                <div id="category-selection-module" class="space-y-6">
+                    <!-- Category sections will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Category View -->
+        <section id="view-category" class="view hidden h-[calc(100vh-112px)] flex">
+            <div class="w-1/4 bg-white overflow-y-auto border-r border-gray-200" id="category-list">
+                <!-- Categories will be injected here -->
+            </div>
+            <div class="w-3/4 overflow-y-auto p-3" id="category-products-container">
+                <div id="category-products" class="grid grid-cols-1 gap-3">
+                    <!-- Products will be injected here -->
+                </div>
+                <div id="category-scroll-trigger" class="infinite-scroll-trigger"></div>
+            </div>
+        </section>
+
+        <!-- Search Results View -->
+        <section id="view-search" class="view hidden">
+            <div class="p-3">
+                <div class="flex justify-between items-center mb-3">
+                    <h2 class="text-lg font-bold">搜索结果</h2>
+                    <span id="search-count" class="text-sm text-gray-500">找到 0 个商品</span>
+                </div>
+                <div id="search-results" class="grid grid-cols-2 gap-3">
+                    <!-- Products will be injected here -->
+                </div>
+                <div id="search-scroll-trigger" class="infinite-scroll-trigger"></div>
+            </div>
+        </section>
+
+        <!-- Detail View -->
+        <section id="view-detail" class="view hidden">
+            <div id="detail-content" class="bg-white">
+                <!-- Detail will be injected here -->
+            </div>
+        </section>
+
+        <!-- Cart View -->
+        <section id="view-cart" class="view hidden">
+            <div class="p-3">
+                <h2 class="text-lg font-bold mb-3">我的清单</h2>
+                <div id="cart-list" class="space-y-3">
+                    <!-- Cart items will be injected here -->
+                </div>
+                <div id="cart-empty" class="text-center py-20 text-gray-500 hidden">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <p>清单还是空的</p>
+                </div>
+            </div>
+            <!-- Checkout Bar -->
+            <div id="checkout-bar" class="fixed bottom-16 left-0 right-0 bg-white border-t border-gray-200 p-3 flex justify-between items-center z-40">
+                <div class="text-sm">
+                    共 <span id="cart-total-count" class="font-bold text-red-500">0</span> 件商品
+                    <p class="text-xs text-gray-400">线下配送，无需费用</p>
+                </div>
+                <button id="submit-order" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold">提交订单</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Tab Bar -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-100 flex justify-around p-2 z-50">
+        <button class="tab-btn flex flex-col items-center flex-1 py-1" data-target="home">
+            <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            <span class="text-[10px] font-bold">货源</span>
+        </button>
+        <button class="tab-btn flex flex-col items-center flex-1 py-1 text-slate-400" data-target="category">
+            <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <span class="text-[10px] font-bold">分类</span>
+        </button>
+        <button class="tab-btn flex flex-col items-center flex-1 py-1 text-slate-400" data-target="cart">
+            <div class="relative">
+                <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                <span id="cart-badge" class="absolute -top-1 -right-2 bg-blue-600 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center hidden shadow-sm border border-white">0</span>
+            </div>
+            <span class="text-[10px] font-bold">进货单</span>
+        </button>
+    </nav>
+
+    <!-- Order Modal -->
+    <div id="order-modal" class="fixed inset-0 bg-black bg-opacity-50 z-[100] flex items-center justify-center hidden p-4">
+        <div class="bg-white rounded-lg w-full max-w-md p-5 max-h-[80vh] flex flex-col">
+            <h3 class="text-xl font-bold mb-4">订单汇总</h3>
+            <div id="order-summary" class="bg-gray-50 p-3 rounded mb-4 overflow-y-auto whitespace-pre-wrap font-mono text-sm border">
+                <!-- Order text will be injected here -->
+            </div>
+            <p class="text-sm text-gray-600 mb-6 italic">提示：配送方式为线下配送，请联系客服。</p>
+            <div class="flex space-x-3">
+                <button id="copy-order" class="flex-1 bg-gray-100 py-3 rounded-lg font-bold">复制文本</button>
+                <button id="close-modal" class="flex-1 bg-blue-600 text-white py-3 rounded-lg font-bold">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Card Template -->
+    <template id="tpl-product">
+        <div class="bg-white rounded shadow-sm overflow-hidden flex flex-col product-card" data-id="">
+            <div class="aspect-square bg-gray-100 relative">
+                <img src="" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover">
+            </div>
+            <div class="p-2 flex-1 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-medium line-clamp-2 mb-1 product-name"></h3>
+                    <p class="text-xs text-gray-400 mb-1 product-model"></p>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <span class="text-red-500 font-bold text-sm product-price"></span>
+                    <button class="add-to-cart-btn bg-blue-50 text-blue-600 p-1 rounded-full">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>
